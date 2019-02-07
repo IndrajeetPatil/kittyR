@@ -1,4 +1,22 @@
+#' @title Cats in R console.
+#' @name catR
+#' @author \href{https://github.com/melissanjohnson/}{Melissa Innerst},
+#'   \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
+#' @return A photo of a cat is downloaded and displayed in the plot window.
+#'
+#' @importFrom rvest html_session html_nodes html_attr
+#' @importFrom imager load.image
+#' @importFrom purrr map
+#' @importFrom tibble as_tibble enframe
+#' @importFrom dplyr %>% mutate filter
+#' @importFrom stringr str_split str_remove_all
+#' @importFrom graphics plot
+#'
+#' @examples
+#' catR::catR()
+#' @export
 
+# function body
 catR <- function() {
 
   # getting all cat images from webpage of interest
@@ -43,7 +61,7 @@ catR <- function() {
 
   # download a random image
   utils::download.file(
-    url = df_combined[sample(x = 1:length(df_combined), size = 1L)],
+    url = df_combined$url[sample(x = 1:length(df_combined$url), size = 1)],
     destfile = temporary_file_location,
     mode = "wb"
   )
@@ -52,5 +70,5 @@ catR <- function() {
   kitty <- imager::load.image(temporary_file_location)
 
   # display the cat
-  plot(kitty, yaxt = "n", axes = FALSE)
+  graphics::plot(kitty, yaxt = "n", axes = FALSE)
 }

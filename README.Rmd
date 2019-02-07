@@ -1,0 +1,48 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
+# catR
+
+This is cat people's version of a package called
+[pupR](https://github.com/melissanjohnson/pupR). Instead of doggos, you will
+instead get kitties in your R console. `r emo::ji("heart_eyes_cat")`
+
+You can get the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("IndrajeetPatil/catR")
+```
+
+```{r include = FALSE}
+library(catR)
+```
+
+And then just execute the only function available-
+
+```{r catR}
+# to always have the same kitty on README
+# choosing a black kitty because they need more love and need to be adopted more
+# frequently
+set.seed(100)
+
+# show me the kitty NOW!
+catR::catR()
+```
+
+May these kitties bring some joy and amusement during your stressful data
+digging jobs!
