@@ -17,8 +17,9 @@ bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.s
 # kittyR
 
 This is cat people’s version of a package called
-[pupR](https://github.com/melissanjohnson/pupR). Instead of doggos, you
-will get kitties and their adorable meows in your R console. 😻
+[pupR](https://github.com/melissanjohnson/pupR) by Melissa Innerst.
+Instead of doggos, you will get kitties **and** their adorable meows in
+your R console. 😻
 
 You can get the development version from [GitHub](https://github.com/)
 with:
@@ -28,7 +29,7 @@ with:
 remotes::install_github("IndrajeetPatil/kittyR")
 ```
 
-And then you can execute one of the two available functions-
+There are only two available functions in this package-
 
 In case you want a picture of a kitty:
 
@@ -42,8 +43,15 @@ kittyR::kittyR()
 
 <img src="man/figures/README-kittyR-1.png" width="100%" />
 
-In case you want to hear a meow either *apropos* nothing or at the end
-of execution of some code, just include this line of code:
+The collection of cat pictures comes from the following collections of
+freely available images:
+
+  - <https://pixabay.com/en/photos/cat/>
+  - <https://www.pexels.com/search/cat/>
+
+In case you just want to hear a meow either *apropos* nothing or at the
+end of execution of some code to let you know that the execution is
+complete, just include this line of code:
 
 ``` r
 # can't print the sound, so
@@ -51,6 +59,10 @@ of execution of some code, just include this line of code:
 # you can choose from a sample of sounds included in the package
 kittyR::meowR(sound = 4)
 ```
+
+If you have a kitty meow that you like and would like to include in the
+package, please either make a PR or e-mail it to me and I will include
+it.
 
 May these kitties bring some joy and amusement during your stressful
 data digging jobs\!

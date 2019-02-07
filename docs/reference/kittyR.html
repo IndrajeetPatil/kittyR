@@ -32,7 +32,13 @@
 
 <meta property="og:title" content="Cats in R console. — kittyR" />
 
-<meta property="og:description" content="Cats in R console." />
+<meta property="og:description" content="This function displays a picture of a cat and plays a short
+sound clip containing cat meow.
+Currently, the images are collected from the following sources-
+https://pixabay.com/en/photos/cat/
+https://www.pexels.com/search/cat/
+The sound files come from the following CC BY 3.0 source:
+http://soundbible.com/suggest.php?q=cat+meow&amp;amp;x=0&amp;amp;y=0" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -88,6 +94,9 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -116,15 +125,27 @@
 
     <div class="ref-description">
     
-    <p>Cats in R console.</p>
+    <p>This function displays a picture of a cat and plays a short
+sound clip containing cat meow.
+Currently, the images are collected from the following sources-</p><ol>
+<li><p><a href='https://pixabay.com/en/photos/cat/'>https://pixabay.com/en/photos/cat/</a></p></li>
+<li><p><a href='https://www.pexels.com/search/cat/'>https://www.pexels.com/search/cat/</a></p></li>
+</ol><p>The sound files come from the following CC BY 3.0 source:
+<a href='http://soundbible.com/suggest.php?q=cat+meow&amp;x=0&amp;y=0'>http://soundbible.com/suggest.php?q=cat+meow&amp;x=0&amp;y=0</a></p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>kittyR</span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sound</span> <span class='kw'>=</span> <span class='fl'>3</span>)</pre>
+    <pre class="usage"><span class='fu'>kittyR</span>(<span class='kw'>url</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sound</span> <span class='kw'>=</span> <span class='fl'>3</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>url</th>
+      <td><p>URL for the source from which individual image URLs are to be
+extracted. Default is <code>NULL</code>. If <code>NULL</code>, a randomly drawn image from the
+default collection will be shown.</p></td>
+    </tr>
     <tr>
       <th>meow</th>
       <td><p>Logical that decides whether to play a meow sound along with the
@@ -135,7 +156,7 @@ picture of a cat.</p></td>
       <td><p>A character string or a number specifying what sound to be
 played by either specifying one of the built in sounds, specifying the path
 to a <code>.wav</code> file or specifying an url. There are currently 6 meows
-included. The default is <code>1</code>.</p></td>
+included. The default is <code>3</code>.</p></td>
     </tr>
     </table>
     
@@ -145,7 +166,14 @@ included. The default is <code>1</code>.</p></td>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kittyR/topics/kittyR'>kittyR</a></span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"><div class='input'><span class='co'># relying on default collection</span>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Random'>set.seed</a></span>(<span class='fl'>3444</span>)
+<span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kittyR/topics/kittyR'>kittyR</a></span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># proving a custom URL</span>
+<span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kittyR/topics/kittyR'>kittyR</a></span>(
+  <span class='kw'>url</span> <span class='kw'>=</span> <span class='st'>"https://www.pexels.com/search/cat/"</span>,
+  <span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+)</div><div class='img'><img src='kittyR-2.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

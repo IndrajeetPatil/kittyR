@@ -1,7 +1,7 @@
 #' @title Prepare a dataframe with URLs for cat pics.
 #' @name kitty_pics_df
 #'
-#' @param url URL to the source from which individual image URLs are to be
+#' @param url URL for the source from which individual image URLs are to be
 #'   extracted.
 #'
 #' @examples
@@ -19,7 +19,7 @@ kitty_pics_df <- function(url) {
   df_static <- kitties %>%
     rvest::html_attr(x = ., name = "src") %>%
     tibble::enframe(x = ., name = "id", value = "url") %>%
-    dplyr::filter(.data = ., !stringr::str_detect(url, "static"))
+    dplyr::filter(.data = ., !stringr::str_detect(url, "static|users|avatar|assets"))
 
   # getting images with two source files (but retaining only the 480 pixel ones)
   df_srcset <-

@@ -10,7 +10,7 @@ meowR(sound = 3)
 \item{sound}{A character string or a number specifying what sound to be
 played by either specifying one of the built in sounds, specifying the path
 to a \code{.wav} file or specifying an url. There are currently 6 meows
-included. The default is \code{1}.}
+included. The default is \code{3}.}
 }
 \description{
 Play a short kitty meow sound.

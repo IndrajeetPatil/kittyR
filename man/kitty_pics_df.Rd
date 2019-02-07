@@ -7,7 +7,7 @@
 kitty_pics_df(url)
 }
 \arguments{
-\item{url}{URL to the source from which individual image URLs are to be
+\item{url}{URL for the source from which individual image URLs are to be
 extracted.}
 }
 \description{
@@ -15,5 +15,4 @@ Prepare a dataframe with URLs for cat pics.
 }
 \examples{
 kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
-
 }

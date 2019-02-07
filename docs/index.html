@@ -52,6 +52,9 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="news/index.html">Changelog</a>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
@@ -80,11 +83,11 @@
 <div id="kittyr" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#kittyr" class="anchor"></a>kittyR</h1></div>
-<p>This is cat people’s version of a package called <a href="https://github.com/melissanjohnson/pupR">pupR</a>. Instead of doggos, you will get kitties and their adorable meows in your R console. 😻</p>
+<p>This is cat people’s version of a package called <a href="https://github.com/melissanjohnson/pupR">pupR</a> by Melissa Innerst. Instead of doggos, you will get kitties <strong>and</strong> their adorable meows in your R console. 😻</p>
 <p>You can get the development version from <a href="https://github.com/">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"IndrajeetPatil/kittyR"</span>)</a></code></pre></div>
-<p>And then you can execute one of the two available functions-</p>
+<p>There are only two available functions in this package-</p>
 <p>In case you want a picture of a kitty:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># to always have the same kitty on README</span></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">100</span>)</a>
@@ -92,11 +95,17 @@
 <a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># show me the kitty NOW!</span></a>
 <a class="sourceLine" id="cb2-5" data-line-number="5">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/kittyR">kittyR</a></span>()</a></code></pre></div>
 <p><img src="reference/figures/README-kittyR-1.png" width="100%"></p>
-<p>In case you want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code, just include this line of code:</p>
+<p>The collection of cat pictures comes from the following collections of freely available images:</p>
+<ul>
+<li><a href="https://pixabay.com/en/photos/cat/" class="uri">https://pixabay.com/en/photos/cat/</a></li>
+<li><a href="https://www.pexels.com/search/cat/" class="uri">https://www.pexels.com/search/cat/</a></li>
+</ul>
+<p>In case you just want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code to let you know that the execution is complete, just include this line of code:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># can't print the sound, so</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co"># meow meow meow</span></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># you can choose from a sample of sounds included in the package</span></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/meowR">meowR</a></span>(<span class="dt">sound =</span> <span class="dv">4</span>)</a></code></pre></div>
+<p>If you have a kitty meow that you like and would like to include in the package, please either make a PR or e-mail it to me and I will include it.</p>
 <p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
 </div>
   </div>

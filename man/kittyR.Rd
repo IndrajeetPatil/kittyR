@@ -4,25 +4,45 @@
 \alias{kittyR}
 \title{Cats in R console.}
 \usage{
-kittyR(meow = TRUE, sound = 3)
+kittyR(url = NULL, meow = TRUE, sound = 3)
 }
 \arguments{
+\item{url}{URL for the source from which individual image URLs are to be
+extracted. Default is \code{NULL}. If \code{NULL}, a randomly drawn image from the
+default collection will be shown.}
+
 \item{meow}{Logical that decides whether to play a meow sound along with the
 picture of a cat.}
 
 \item{sound}{A character string or a number specifying what sound to be
 played by either specifying one of the built in sounds, specifying the path
 to a \code{.wav} file or specifying an url. There are currently 6 meows
-included. The default is \code{1}.}
+included. The default is \code{3}.}
 }
 \value{
 A photo of a cat is downloaded and displayed in the plot window.
 }
 \description{
-Cats in R console.
+This function displays a picture of a cat and plays a short
+sound clip containing cat meow.
+Currently, the images are collected from the following sources-
+\enumerate{
+\item \url{https://pixabay.com/en/photos/cat/}
+\item \url{https://www.pexels.com/search/cat/}
+}
+The sound files come from the following CC BY 3.0 source:
+\url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
 }
 \examples{
+# relying on default collection
+set.seed(3444)
 kittyR::kittyR(meow = FALSE)
+
+# proving a custom URL
+kittyR::kittyR(
+  url = "https://www.pexels.com/search/cat/",
+  meow = FALSE
+)
 }
 \author{
 \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
