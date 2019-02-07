@@ -11,7 +11,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
@@ -48,13 +48,13 @@
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54095998-3"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87348339-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-54095998-3');
+  gtag('config', 'UA-87348339-3');
 </script>
 
   </head>
@@ -120,19 +120,37 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>kittyR</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>kittyR</span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sound</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>meow</th>
+      <td><p>Logical that decides whether to play a meow sound along with the
+picture of a cat.</p></td>
+    </tr>
+    <tr>
+      <th>sound</th>
+      <td><p>A character string or a number specifying what sound to be
+played by either specifying one of the built in sounds, specifying the path
+to a <code>.wav</code> file or specifying an url. There are currently 6 meows
+included. The default is <code>1</code>.</p></td>
+    </tr>
+    </table>
+    
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A photo of a cat is downloaded and displayed in the plot window.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kittyR/topics/kittyR'>kittyR</a></span>()</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"><div class='input'><span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kittyR/topics/kittyR'>kittyR</a></span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
       
@@ -140,14 +158,13 @@
     </ul>
 
     <h2>Author</h2>
-    <p><a href='https://github.com/melissanjohnson/'>Melissa Innerst</a>,
-<a href='https://github.com/IndrajeetPatil/'>Indrajeet Patil</a></p>
+    <p><a href='https://github.com/IndrajeetPatil/'>Indrajeet Patil</a></p>
   </div>
 </div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by <a href='https://sites.google.com/site/indrajeetspatilmorality/'>Indrajeet Patil</a>, Melissa  Innerst.</p>
+  <p>Developed by <a href='https://sites.google.com/site/indrajeetspatilmorality/'>Indrajeet Patil</a>.</p>
 </div>
 
 <div class="pkgdown">

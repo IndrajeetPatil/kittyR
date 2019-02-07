@@ -2,8 +2,8 @@ url: https://indrajeetpatil.github.io/kittyR/
 
 template:
   params:
-    bootswatch: cosmo
-    ganalytics: UA-54095998-3
+    bootswatch: flatly
+    ganalytics: UA-87348339-3
 
 development:
   mode: unreleased

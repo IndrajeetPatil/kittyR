@@ -2,6 +2,8 @@
 
 export("%>%")
 export(kittyR)
+export(meowR)
+importFrom(beepr,beep)
 importFrom(dplyr,"%>%")
 importFrom(dplyr,filter)
 importFrom(dplyr,mutate)

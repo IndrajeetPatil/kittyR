@@ -1,8 +1,11 @@
 #' @title Cats in R console.
 #' @name kittyR
-#' @author \href{https://github.com/melissanjohnson/}{Melissa Innerst},
-#'   \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
+#' @author \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
 #' @return A photo of a cat is downloaded and displayed in the plot window.
+#'
+#' @param meow Logical that decides whether to play a meow sound along with the
+#'   picture of a cat.
+#' @inheritParams meowR
 #'
 #' @importFrom rvest html_session html_nodes html_attr
 #' @importFrom imager load.image
@@ -13,11 +16,11 @@
 #' @importFrom graphics plot
 #'
 #' @examples
-#' kittyR::kittyR()
+#' kittyR::kittyR(meow = FALSE)
 #' @export
 
 # function body
-kittyR <- function() {
+kittyR <- function(meow = TRUE, sound = 1) {
 
   # getting all cat images from webpage of interest
   kitties <-
@@ -66,8 +69,13 @@ kittyR <- function() {
     mode = "wb"
   )
 
-  # Bring the doggo to R
+  # bring the kitties to R
   kitty <- imager::load.image(temporary_file_location)
+
+  # if needed, play a meow sound
+  if (isTRUE(meow)) {
+    kittyR::meowR(sound = sound)
+  }
 
   # display the cat
   graphics::plot(kitty, yaxt = "n", axes = FALSE)
