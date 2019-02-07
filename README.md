@@ -3,7 +3,7 @@
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-# catR
+# kittyR
 
 This is cat people’s version of a package called
 [pupR](https://github.com/melissanjohnson/pupR). Instead of doggos, you
@@ -14,10 +14,10 @@ with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("IndrajeetPatil/catR")
+remotes::install_github("IndrajeetPatil/kittyR")
 ```
 
-And then just execute the only function (`catR`) available.
+And then just execute the only function (`kittyR`) available.
 
 May these kitties bring some joy and amusement during your stressful
 data digging jobs\!
@@ -29,7 +29,7 @@ data digging jobs\!
 set.seed(100)
 
 # show me the kitty NOW!
-catR::kittyR()
+kittyR::kittyR()
 ```
 
 <img src="man/figures/README-kittyR-1.png" width="100%" />

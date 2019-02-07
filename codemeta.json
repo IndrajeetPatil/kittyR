@@ -1,11 +1,14 @@
 {
-  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
-  "identifier": "catR",
+  "identifier": "kittyR",
   "description": "Get pictures of cats in your R console.",
-  "name": "catR: kitties in your R console",
-  "codeRepository": "https://github.com/IndrajeetPatil/catR",
-  "issueTracker": "https://github.com/IndrajeetPatil/catR/issues",
+  "name": "kittyR: kitties in your R console",
+  "codeRepository": "https://github.com/IndrajeetPatil/kittyR",
+  "issueTracker": "https://github.com/IndrajeetPatil/kittyR/issues",
   "license": "https://spdx.org/licenses/MIT",
   "version": "0.0.1",
   "programmingLanguage": {
@@ -161,7 +164,8 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "153.077KB",
+  "fileSize": "302.163KB",
   "contIntegration": [],
-  "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental"
+  "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
+  "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md"
 }

@@ -5,6 +5,6 @@ utils::globalVariables(
     ".",
     "id"
   ),
-  package = "catR",
+  package = "kittyR",
   add = FALSE
 )
