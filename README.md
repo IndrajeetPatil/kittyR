@@ -2,6 +2,10 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![CRAN\_Release\_Badge](http://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
+[![Travis Build
+Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
@@ -30,8 +34,6 @@ In case you want a picture of a kitty:
 
 ``` r
 # to always have the same kitty on README
-# choosing a black kitty because they need more love and need to be adopted more
-# frequently
 set.seed(100)
 
 # show me the kitty NOW!
@@ -41,12 +43,13 @@ kittyR::kittyR()
 <img src="man/figures/README-kittyR-1.png" width="100%" />
 
 In case you want to hear a meow either *apropos* nothing or at the end
-of execution of some code:
+of execution of some code, just include this line of code:
 
 ``` r
 # can't print the sound, so
 # meow meow meow
-kittyR::meowR()
+# you can choose from a sample of sounds included in the package
+kittyR::meowR(sound = 2)
 ```
 
 May these kitties bring some joy and amusement during your stressful

@@ -44,8 +44,6 @@ In case you want a picture of a kitty:
 
 ```{r kittyR}
 # to always have the same kitty on README
-# choosing a black kitty because they need more love and need to be adopted more
-# frequently
 set.seed(100)
 
 # show me the kitty NOW!
