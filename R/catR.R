@@ -1,5 +1,5 @@
 #' @title Cats in R console.
-#' @name catR
+#' @name kittyR
 #' @author \href{https://github.com/melissanjohnson/}{Melissa Innerst},
 #'   \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
 #' @return A photo of a cat is downloaded and displayed in the plot window.
@@ -13,11 +13,11 @@
 #' @importFrom graphics plot
 #'
 #' @examples
-#' catR::catR()
+#' kittyR::kittyR()
 #' @export
 
 # function body
-catR <- function() {
+kittyR <- function() {
 
   # getting all cat images from webpage of interest
   kitties <-

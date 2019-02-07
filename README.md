@@ -29,7 +29,7 @@ data digging jobs\!
 set.seed(100)
 
 # show me the kitty NOW!
-catR::catR()
+catR::kittyR()
 ```
 
-<img src="man/figures/README-catR-1.png" width="100%" />
+<img src="man/figures/README-kittyR-1.png" width="100%" />

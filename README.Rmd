@@ -25,7 +25,7 @@ You can get the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("IndrajeetPatil/catR")
+remotes::install_github("IndrajeetPatil/kittyR")
 ```
 
 ```{r include = FALSE}
@@ -37,13 +37,13 @@ And then just execute the only function (`catR`) available.
 May these kitties bring some joy and amusement during your stressful data
 digging jobs!
 
-```{r catR}
+```{r kittyR}
 # to always have the same kitty on README
 # choosing a black kitty because they need more love and need to be adopted more
 # frequently
 set.seed(100)
 
 # show me the kitty NOW!
-catR::catR()
+catR::kittyR()
 ```
 
