@@ -20,7 +20,7 @@
 #' @export
 
 # function body
-kittyR <- function(meow = TRUE, sound = 1) {
+kittyR <- function(meow = TRUE, sound = 3) {
 
   # getting the dataframe with image URLs
   df_combined <-

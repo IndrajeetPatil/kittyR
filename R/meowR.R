@@ -12,12 +12,12 @@
 #' @examples
 #' \dontrun{
 #' # play Eno's meow
-#' kittyR::meowR(sound = 3)
+#' kittyR::meowR(sound = 4)
 #' }
 #' @export
 
 # function body
-meowR <- function(sound = 1) {
+meowR <- function(sound = 3) {
 
   # a vector of cat sounds
   sounds <- c(

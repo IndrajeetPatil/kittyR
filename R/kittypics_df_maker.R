@@ -6,7 +6,6 @@
 #'
 #' @examples
 #' kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
-#'
 #' @export
 
 # function body

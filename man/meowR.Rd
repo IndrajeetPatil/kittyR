@@ -4,7 +4,7 @@
 \alias{meowR}
 \title{Play a short kitty meow sound.}
 \usage{
-meowR(sound = 1)
+meowR(sound = 3)
 }
 \arguments{
 \item{sound}{A character string or a number specifying what sound to be
@@ -18,7 +18,7 @@ Play a short kitty meow sound.
 \examples{
 \dontrun{
 # play Eno's meow
-kittyR::meowR(sound = 3)
+kittyR::meowR(sound = 4)
 }
 }
 \author{

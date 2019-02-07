@@ -4,7 +4,7 @@
 \alias{kittyR}
 \title{Cats in R console.}
 \usage{
-kittyR(meow = TRUE, sound = 1)
+kittyR(meow = TRUE, sound = 3)
 }
 \arguments{
 \item{meow}{Logical that decides whether to play a meow sound along with the

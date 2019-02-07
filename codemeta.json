@@ -172,7 +172,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "3557.833KB",
+  "fileSize": "3557.831KB",
   "contIntegration": [],
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md"

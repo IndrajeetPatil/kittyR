@@ -49,7 +49,7 @@ of execution of some code, just include this line of code:
 # can't print the sound, so
 # meow meow meow
 # you can choose from a sample of sounds included in the package
-kittyR::meowR(sound = 2)
+kittyR::meowR(sound = 4)
 ```
 
 May these kitties bring some joy and amusement during your stressful
