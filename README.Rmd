@@ -32,7 +32,10 @@ remotes::install_github("IndrajeetPatil/catR")
 library(catR)
 ```
 
-And then just execute the only function available-
+And then just execute the only function (`catR`) available.
+
+May these kitties bring some joy and amusement during your stressful data
+digging jobs!
 
 ```{r catR}
 # to always have the same kitty on README
@@ -44,5 +47,3 @@ set.seed(100)
 catR::catR()
 ```
 
-May these kitties bring some joy and amusement during your stressful data
-digging jobs!

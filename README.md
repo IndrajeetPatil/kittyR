@@ -17,7 +17,10 @@ with:
 remotes::install_github("IndrajeetPatil/catR")
 ```
 
-And then just execute the only function available-
+And then just execute the only function (`catR`) available.
+
+May these kitties bring some joy and amusement during your stressful
+data digging jobs\!
 
 ``` r
 # to always have the same kitty on README
@@ -30,6 +33,3 @@ catR::catR()
 ```
 
 <img src="man/figures/README-catR-1.png" width="100%" />
-
-May these kitties bring some joy and amusement during your stressful
-data digging jobs\!

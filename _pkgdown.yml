@@ -1,0 +1,15 @@
+url: https://indrajeetpatil.github.io/catR/
+
+template:
+  params:
+    bootswatch: cosmo
+    ganalytics: UA-54095998-3
+
+development:
+  mode: unreleased
+
+authors:
+  Indrajeet Patil:
+    href: https://sites.google.com/site/indrajeetspatilmorality/
+  Melissa Innerst:
+    href: https://github.com/melissanjohnson/
