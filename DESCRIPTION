@@ -1,6 +1,6 @@
 Type: Package
 Package: kittyR
-Title: Kitty pictures and sounds from your R console
+Title: Kitty pictures and meows from R console
 Version: 0.0.1
 Authors@R: 
     person(given = "Indrajeet",

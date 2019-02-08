@@ -1,25 +1,30 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# kittyR: Kitty pictures and meows from R console
+
 [![CRAN\_Release\_Badge](http://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
 [![Travis Build
 Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
+[![Daily downloads
+badge](https://cranlogs.r-pkg.org/badges/last-day/kittyR?color=blue)](https://CRAN.R-project.org/package=kittyR)
+[![Total downloads
+badge](https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue)](https://CRAN.R-project.org/package=kittyR)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2019--02--07-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2019--02--08-yellowgreen.svg)](/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
-# kittyR
-
-This is cat people’s version of a package called
-[pupR](https://github.com/melissanjohnson/pupR) by Melissa Innerst.
-Instead of doggos, you will get kitties **and** their adorable meows in
-your R console. 😻
+This package is designed for rainy days when your results are
+heartbreaking or when no matter what you try, you can’t seem to get rid
+of that bug. Take a respite from those negative thoughts by accessing
+kitty pics **and** their adorable meows right from your R console 😻 and
+then get back to work again\!
 
 You can get the development version from [GitHub](https://github.com/)
 with:
@@ -63,6 +68,11 @@ kittyR::meowR(sound = 4)
 If you have a kitty meow that you like and would like to include in the
 package, please either make a PR or e-mail it to me and I will include
 it.
+
+This package was inspired by
+[pupR](https://github.com/melissanjohnson/pupR) package by Melissa
+Innerst. Thanks are due to my lab buddy Jonathan Phillips for suggesting
+including `meowR` function as a replacement for `beepR`.
 
 May these kitties bring some joy and amusement during your stressful
 data digging jobs\!
