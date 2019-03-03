@@ -18,11 +18,18 @@
 
 # function body
 meowR <- function(sound = 3) {
-  # If sound is out of range, give warning and play random sound
-  if(!(sound %in% 1:6)) {
-    message(glue::glue("Warning: There are currently only 6 sounds avaliable, you requested sound {sound}. Please see details in meowR help."))
-    message("Playing random meow")
-    sound <- sample(1:6, 1)
+  # if sound is out of range, give warning and play random sound
+  if (!(sound %in% 1:6)) {
+    message(
+      glue::glue(
+        "Warning: There are currently only 6 sounds available, you requested sound {sound}.\n
+        Please see details in `meowR` help.\n
+        Playing a random meow."
+      )
+    )
+
+    # randomly select a sound
+    sound <- sample(x = 1:6, size = 1)
   }
 
   # a vector of cat sounds

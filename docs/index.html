@@ -85,15 +85,15 @@
 
 <p>This package is designed for rainy days when your results are heartbreaking or when no matter what you try, you can’t seem to get rid of that bug. Take a respite from those negative thoughts by accessing kitty pics <strong>and</strong> their adorable meows right from your R console 😻 and then get back to work again!</p>
 <p>You can get the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"IndrajeetPatil/kittyR"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb1-2" title="2">remotes<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"IndrajeetPatil/kittyR"</span>)</a></code></pre></div>
 <p>There are only two available functions in this package-</p>
 <p>In case you want a picture of a kitty:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># to always have the same kitty on README</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">100</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># show me the kitty NOW!</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/kittyR">kittyR</a></span>()</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># to always have the same kitty on README</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co"># show me the kitty NOW!</span></a>
+<a class="sourceLine" id="cb2-5" title="5">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/kittyR">kittyR</a></span>()</a></code></pre></div>
 <p><img src="reference/figures/README-kittyR-1.png" width="100%"></p>
 <p>The collection of cat pictures comes from the following collections of freely available images:</p>
 <ul>
@@ -101,10 +101,10 @@
 <li><a href="https://www.pexels.com/search/cat/" class="uri">https://www.pexels.com/search/cat/</a></li>
 </ul>
 <p>In case you just want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code to let you know that the execution is complete, just include this line of code:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># can't print the sound, so</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co"># meow meow meow</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"># you can choose from a sample of sounds included in the package</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/meowR">meowR</a></span>(<span class="dt">sound =</span> <span class="dv">4</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># can't print the sound, so</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co"># meow meow meow</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co"># you can choose from a sample of sounds included in the package</span></a>
+<a class="sourceLine" id="cb3-4" title="4">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/meowR">meowR</a></span>(<span class="dt">sound =</span> <span class="dv">4</span>)</a></code></pre></div>
 <p>If you have a kitty meow that you like and would like to include in the package, please either make a PR or e-mail it to me and I will include it.</p>
 <p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR">pupR</a> package by Melissa Innerst. Thanks are due to my lab buddy Jonathan Phillips for suggesting including <code>meowR</code> function as a replacement for <code>beepR</code>.</p>
 <p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
@@ -142,11 +142,9 @@
 <li><a href="https://CRAN.R-project.org/package=kittyR"><img src="http://www.r-pkg.org/badges/version-ago/kittyR" alt="CRAN_Release_Badge"></a></li>
 <li><a href="https://travis-ci.org/IndrajeetPatil/kittyR"><img src="https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master" alt="Travis Build Status"></a></li>
 <li><a href="https://ci.appveyor.com/project/IndrajeetPatil/kittyR"><img src="https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
-<li><a href="https://CRAN.R-project.org/package=kittyR"><img src="https://cranlogs.r-pkg.org/badges/last-day/kittyR?color=blue" alt="Daily downloads badge"></a></li>
-<li><a href="https://CRAN.R-project.org/package=kittyR"><img src="https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue" alt="Total downloads badge"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
 <li><a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active - The project has reached a stable, usable state and is being actively developed."></a></li>
-<li><a href="/commits/master"><img src="https://img.shields.io/badge/last%20change-2019--02--08-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="/commits/master"><img src="https://img.shields.io/badge/last%20change-2019--03--03-yellowgreen.svg" alt="Last-changedate"></a></li>
 <li><a href="https://github.com/IndrajeetPatil/kittyR"><img src="https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg" alt="GitHub code size in bytes"></a></li>
 </ul>
 </div>

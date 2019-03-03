@@ -19,6 +19,7 @@ Depends:
 Imports:
     beepr (>= 1.3),
     dplyr (>= 0.7.8),
+    glue,
     graphics,
     imager (>= 0.41.2),
     magrittr,

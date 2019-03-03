@@ -17,7 +17,7 @@
     "version": "3.6.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2018-11-30 r75724)",
+  "runtimePlatform": "R Under development (unstable) (2019-02-26 r76164)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -103,6 +103,18 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "glue",
+      "name": "glue",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=glue"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "graphics",
       "name": "graphics"
     },
@@ -184,7 +196,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "3406.818KB",
+  "fileSize": "3116.092KB",
   "contIntegration": [],
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",
