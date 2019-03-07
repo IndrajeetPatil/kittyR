@@ -69,11 +69,12 @@ kittyR <- function(url = NULL, meow = TRUE, sound = 3) {
   # bring the kitties to R
   kitty <- imager::load.image(temporary_file_location)
 
+  # display the cat
+  graphics::plot(kitty, yaxt = "n", axes = FALSE)
+
   # if needed, play a meow sound
   if (isTRUE(meow)) {
     kittyR::meowR(sound = sound)
   }
 
-  # display the cat
-  graphics::plot(kitty, yaxt = "n", axes = FALSE)
 }
