@@ -15,11 +15,14 @@ kitty_pics_df <- function(url) {
     rvest::html_session(url = url) %>%
     rvest::html_nodes(x = ., css = "img")
 
+  # exclusion pattern
+  exclude_str_pattern <- "logo|static|users|avatar|assets|hazelnut"
+
   # getting static images
   df_static <- kitties %>%
     rvest::html_attr(x = ., name = "src") %>%
     tibble::enframe(x = ., name = "id", value = "url") %>%
-    dplyr::filter(.data = ., !stringr::str_detect(url, "static|users|avatar|assets"))
+    dplyr::filter(.data = ., !stringr::str_detect(url, exclude_str_pattern))
 
   # getting images with two source files (but retaining only the 480 pixel ones)
   df_srcset <-

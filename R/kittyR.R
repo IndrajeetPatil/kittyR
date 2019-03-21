@@ -8,6 +8,8 @@
 #' \enumerate{
 #' \item \url{https://pixabay.com/en/photos/cat/}
 #' \item \url{https://www.pexels.com/search/cat/}
+#' \item \url{https://pixabay.com/en/photos/kitten/}
+#' \item \url{https://www.pexels.com/search/kitten/}
 #' }
 #' The sound files come from the following CC BY 3.0 source:
 #' \url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
@@ -17,7 +19,10 @@
 #'   default collection will be shown.
 #' @param meow Logical that decides whether to play a meow sound along with the
 #'   picture of a cat.
+#' @param only_kitten Logical that decides whether only kitten pics should be
+#'   selected (default: `FALSE`).
 #' @inheritParams meowR
+#' @param ... Additional arguments (currently ignored).
 #'
 #' @importFrom rvest html_session html_nodes html_attr
 #' @importFrom imager load.image
@@ -26,29 +31,53 @@
 #' @importFrom dplyr %>% mutate filter
 #' @importFrom stringr str_split str_remove_all
 #' @importFrom graphics plot
+#' @importFrom ellipsis check_dots_used
 #'
 #' @examples
 #' # relying on default collection
-#' set.seed(3444)
+#' set.seed(122)
 #' kittyR::kittyR(meow = FALSE)
 #'
-#' # proving a custom URL
+#' # in case you want only pics of kittens
+#' set.seed(111)
+#' kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+#'
+#' # provide a custom URL
 #' kittyR::kittyR(
-#'   url = "https://www.pexels.com/search/cat/",
+#'   url = "https://visualhunt.com/photos/cat/",
 #'   meow = FALSE
 #' )
 #' @export
 
 # function body
-kittyR <- function(url = NULL, meow = TRUE, sound = 3) {
+kittyR <- function(url = NULL,
+                   meow = TRUE,
+                   sound = 3,
+                   only_kitten = FALSE,
+                   ...) {
+  ellipsis::check_dots_used()
+
+  # if no url is provided
   if (is.null(url)) {
+    # if only kitten pics are needed
+    if (isTRUE(only_kitten)) {
+      url_list <- list(url = tibble::lst(
+        "https://pixabay.com/en/photos/kitten/",
+        "https://www.pexels.com/search/kitten/"
+      ))
+    } else {
+      url_list <- list(url = tibble::lst(
+        "https://pixabay.com/en/photos/cat/",
+        "https://www.pexels.com/search/cat/",
+        "https://pixabay.com/en/photos/kitten/",
+        "https://www.pexels.com/search/kitten/"
+      ))
+    }
+
     # getting the dataframe with image URLs
     df_combined <-
       purrr::pmap_dfr(
-        .l = list(url = tibble::lst(
-          "https://pixabay.com/en/photos/cat/",
-          "https://www.pexels.com/search/cat/"
-        )),
+        .l = url_list,
         .f = kittyR::kitty_pics_df,
         .id = "source"
       )
@@ -67,7 +96,7 @@ kittyR <- function(url = NULL, meow = TRUE, sound = 3) {
   )
 
   # bring the kitties to R
-  kitty <- imager::load.image(temporary_file_location)
+  kitty <- imager::load.image(file = temporary_file_location)
 
   # display the cat
   graphics::plot(kitty, yaxt = "n", axes = FALSE)
@@ -76,5 +105,4 @@ kittyR <- function(url = NULL, meow = TRUE, sound = 3) {
   if (isTRUE(meow)) {
     kittyR::meowR(sound = sound)
   }
-
 }

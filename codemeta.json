@@ -17,7 +17,7 @@
     "version": "3.6.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2019-02-26 r76164)",
+  "runtimePlatform": "R Under development (unstable) (2019-03-19 r76252)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -92,7 +92,7 @@
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
-      "version": ">= 0.7.8",
+      "version": ">= 0.8.0",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -100,6 +100,18 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=dplyr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "ellipsis",
+      "name": "ellipsis",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ellipsis"
     },
     {
       "@type": "SoftwareApplication",
@@ -147,7 +159,7 @@
       "@type": "SoftwareApplication",
       "identifier": "purrr",
       "name": "purrr",
-      "version": ">= 0.3.0",
+      "version": ">= 0.3.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -186,7 +198,7 @@
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
-      "version": ">= 2.0.1",
+      "version": ">= 2.1.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -196,9 +208,12 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "3116.092KB",
+  "fileSize": "3004.372KB",
   "contIntegration": [],
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",
-  "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md"
+  "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {}
 }

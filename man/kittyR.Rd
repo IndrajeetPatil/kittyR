@@ -4,7 +4,8 @@
 \alias{kittyR}
 \title{Cats in R console.}
 \usage{
-kittyR(url = NULL, meow = TRUE, sound = 3)
+kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE,
+  ...)
 }
 \arguments{
 \item{url}{URL for the source from which individual image URLs are to be
@@ -18,6 +19,11 @@ picture of a cat.}
 played by either specifying one of the built in sounds, specifying the path
 to a \code{.wav} file or specifying an url. There are currently 6 meows
 included. The default is \code{3}.}
+
+\item{only_kitten}{Logical that decides whether only kitten pics should be
+selected (default: \code{FALSE}).}
+
+\item{...}{Additional arguments (currently ignored).}
 }
 \value{
 A photo of a cat is downloaded and displayed in the plot window.
@@ -29,18 +35,24 @@ Currently, the images are collected from the following sources-
 \enumerate{
 \item \url{https://pixabay.com/en/photos/cat/}
 \item \url{https://www.pexels.com/search/cat/}
+\item \url{https://pixabay.com/en/photos/kitten/}
+\item \url{https://www.pexels.com/search/kitten/}
 }
 The sound files come from the following CC BY 3.0 source:
 \url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
 }
 \examples{
 # relying on default collection
-set.seed(3444)
+set.seed(122)
 kittyR::kittyR(meow = FALSE)
 
-# proving a custom URL
+# in case you want only pics of kittens
+set.seed(111)
+kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+
+# provide a custom URL
 kittyR::kittyR(
-  url = "https://www.pexels.com/search/cat/",
+  url = "https://visualhunt.com/photos/cat/",
   meow = FALSE
 )
 }

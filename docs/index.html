@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kitty pictures and meows from R console • kittyR</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Kitty pictures and meows from R console">
 <meta property="og:description" content="Get pictures of cats and their meows from your R
@@ -45,7 +46,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -59,7 +60,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/IndrajeetPatil/kittyR">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -94,17 +95,26 @@
 <a class="sourceLine" id="cb2-3" title="3"></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="co"># show me the kitty NOW!</span></a>
 <a class="sourceLine" id="cb2-5" title="5">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/kittyR">kittyR</a></span>()</a></code></pre></div>
-<p><img src="reference/figures/README-kittyR-1.png" width="100%"></p>
+<p><img src="reference/figures/README-kittyR1-1.png" width="100%"></p>
+<p>By default, the collection will include any kind of cat (big, small, wild, etc.). If you want only kittens, you can use an additional argument.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># to always have the same kitty on README</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># show me the kitty NOW!</span></a>
+<a class="sourceLine" id="cb3-5" title="5">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/kittyR">kittyR</a></span>(<span class="dt">meow =</span> <span class="ot">FALSE</span>, <span class="dt">only_kitten =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<p><img src="reference/figures/README-kittyR2-1.png" width="100%"></p>
 <p>The collection of cat pictures comes from the following collections of freely available images:</p>
 <ul>
 <li><a href="https://pixabay.com/en/photos/cat/" class="uri">https://pixabay.com/en/photos/cat/</a></li>
 <li><a href="https://www.pexels.com/search/cat/" class="uri">https://www.pexels.com/search/cat/</a></li>
+<li><a href="https://pixabay.com/en/photos/kitten/" class="uri">https://pixabay.com/en/photos/kitten/</a></li>
+<li><a href="https://www.pexels.com/search/kitten/" class="uri">https://www.pexels.com/search/kitten/</a></li>
 </ul>
 <p>In case you just want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code to let you know that the execution is complete, just include this line of code:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># can't print the sound, so</span></a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="co"># meow meow meow</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="co"># you can choose from a sample of sounds included in the package</span></a>
-<a class="sourceLine" id="cb3-4" title="4">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/meowR">meowR</a></span>(<span class="dt">sound =</span> <span class="dv">4</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># can't print the sound, so</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"># meow meow meow</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"># you can choose from a sample of sounds included in the package</span></a>
+<a class="sourceLine" id="cb4-4" title="4">kittyR<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/kittyR/topics/meowR">meowR</a></span>(<span class="dt">sound =</span> <span class="dv">4</span>)</a></code></pre></div>
 <p>If you have a kitty meow that you like and would like to include in the package, please either make a PR or e-mail it to me and I will include it.</p>
 <p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR">pupR</a> package by Melissa Innerst. Thanks are due to my lab buddy Jonathan Phillips for suggesting including <code>meowR</code> function as a replacement for <code>beepR</code>.</p>
 <p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
@@ -144,7 +154,7 @@
 <li><a href="https://ci.appveyor.com/project/IndrajeetPatil/kittyR"><img src="https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
 <li><a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" alt="Project Status: Active - The project has reached a stable, usable state and is being actively developed."></a></li>
-<li><a href="/commits/master"><img src="https://img.shields.io/badge/last%20change-2019--03--03-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="/commits/master"><img src="https://img.shields.io/badge/last%20change-2019--03--20-yellowgreen.svg" alt="Last-changedate"></a></li>
 <li><a href="https://github.com/IndrajeetPatil/kittyR"><img src="https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg" alt="GitHub code size in bytes"></a></li>
 </ul>
 </div>
