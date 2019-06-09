@@ -18,7 +18,7 @@ Depends:
     R (>= 3.5.0)
 Imports:
     beepr (>= 1.3),
-    dplyr (>= 0.8.0),
+    dplyr (>= 0.8.1),
     ellipsis,
     glue,
     graphics,
@@ -27,7 +27,7 @@ Imports:
     purrr (>= 0.3.2),
     rvest (>= 0.3.2),
     stringr (>= 1.3.1),
-    tibble (>= 2.1.1)
+    tibble (>= 2.1.3)
 Suggests: 
     spelling,
     testthat

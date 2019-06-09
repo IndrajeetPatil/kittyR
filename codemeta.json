@@ -17,7 +17,7 @@
     "version": "3.6.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2019-03-19 r76252)",
+  "runtimePlatform": "R version 3.6.0 alpha (2019-03-29 r76300)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -92,7 +92,7 @@
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
-      "version": ">= 0.8.0",
+      "version": ">= 0.8.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -198,7 +198,7 @@
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
-      "version": ">= 2.1.1",
+      "version": ">= 2.1.3",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -208,7 +208,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "3004.372KB",
+  "fileSize": "3004.375KB",
   "contIntegration": [],
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#experimental",
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",

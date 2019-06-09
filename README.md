@@ -12,7 +12,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2019--03--03-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2019--06--09-yellowgreen.svg)](/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
@@ -42,13 +42,29 @@ set.seed(100)
 kittyR::kittyR()
 ```
 
-<img src="man/figures/README-kittyR-1.png" width="100%" />
+<img src="man/figures/README-kittyR1-1.png" width="100%" />
+
+By default, the collection will include any kind of cat (big, small,
+wild, etc.). If you want only kittens, you can use an additional
+argument.
+
+``` r
+# to always have the same kitty on README
+set.seed(100)
+
+# show me the kitten NOW!
+kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+```
+
+<img src="man/figures/README-kittyR2-1.png" width="100%" />
 
 The collection of cat pictures comes from the following collections of
 freely available images:
 
   - <https://pixabay.com/en/photos/cat/>
   - <https://www.pexels.com/search/cat/>
+  - <https://pixabay.com/en/photos/kitten/>
+  - <https://www.pexels.com/search/kitten/>
 
 In case you just want to hear a meow either *apropos* nothing or at the
 end of execution of some code to let you know that the execution is
