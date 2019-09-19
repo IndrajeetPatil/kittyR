@@ -2,7 +2,7 @@
 % Please edit documentation in R/meowR.R
 \name{meowR}
 \alias{meowR}
-\title{Play a short kitty meow sound.}
+\title{Play a short kitty meow sound}
 \usage{
 meowR(sound = 3)
 }
@@ -13,7 +13,7 @@ to a \code{.wav} file or specifying an url. There are currently 6 meows
 included. The default is \code{3}.}
 }
 \description{
-Play a short kitty meow sound.
+Play a short kitty meow sound
 }
 \examples{
 \dontrun{

@@ -18,14 +18,14 @@ Depends:
     R (>= 3.5.0)
 Imports:
     beepr (>= 1.3),
-    dplyr (>= 0.8.1),
-    ellipsis,
-    glue,
+    dplyr (>= 0.8.3),
+    ellipsis (>= 0.2.0.1),
+    glue (>= 1.3.1),
     graphics,
     imager (>= 0.41.2),
     magrittr,
     purrr (>= 0.3.2),
-    rvest (>= 0.3.2),
+    rvest (>= 0.3.4),
     stringr (>= 1.3.1),
     tibble (>= 2.1.3)
 Suggests: 
@@ -35,4 +35,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 6.1.99.9001

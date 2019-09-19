@@ -3,13 +3,14 @@
 #'
 #' @param url URL for the source from which individual image URLs are to be
 #'   extracted.
+#' @param ... Currently ignored.
 #'
 #' @examples
 #' kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
 #' @export
 
 # function body
-kitty_pics_df <- function(url) {
+kitty_pics_df <- function(url, ...) {
   # getting all cat images from webpage of interest
   kitties <-
     rvest::html_session(url = url) %>%
@@ -19,7 +20,8 @@ kitty_pics_df <- function(url) {
   exclude_str_pattern <- "logo|static|users|avatar|assets|hazelnut"
 
   # getting static images
-  df_static <- kitties %>%
+  df_static <-
+    kitties %>%
     rvest::html_attr(x = ., name = "src") %>%
     tibble::enframe(x = ., name = "id", value = "url") %>%
     dplyr::filter(.data = ., !stringr::str_detect(url, exclude_str_pattern))
@@ -45,7 +47,8 @@ kitty_pics_df <- function(url) {
     tibble::enframe(x = ., name = "id", value = "url")
 
   # combining both images sets and giving them a unique id
-  df_combined <- dplyr::bind_rows(df_static, df_srcset, .id = "image_type") %>%
+  df_combined <-
+    dplyr::bind_rows(df_static, df_srcset, .id = "image_type") %>%
     dplyr::mutate(.data = ., id = dplyr::row_number(x = url)) %>%
     dplyr::arrange(.data = ., id)
 

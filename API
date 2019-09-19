@@ -1,0 +1,3 @@
+kitty_pics_df(url, ...)
+kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE, ...)
+meowR(sound = 3)

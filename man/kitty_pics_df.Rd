@@ -4,11 +4,13 @@
 \alias{kitty_pics_df}
 \title{Prepare a dataframe with URLs for cat pics.}
 \usage{
-kitty_pics_df(url)
+kitty_pics_df(url, ...)
 }
 \arguments{
 \item{url}{URL for the source from which individual image URLs are to be
 extracted.}
+
+\item{...}{Currently ignored.}
 }
 \description{
 Prepare a dataframe with URLs for cat pics.

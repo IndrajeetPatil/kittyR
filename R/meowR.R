@@ -1,4 +1,4 @@
-#' @title Play a short kitty meow sound.
+#' @title Play a short kitty meow sound
 #' @name meowR
 #' @author \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
 #'

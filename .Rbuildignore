@@ -1,4 +1,3 @@
-^\cache$
 ^codemeta\.json$
 ^Meta$
 ^doc$
@@ -30,3 +29,4 @@ tests\^spelling
 ^LICENSE\.md$
 ^\.lintr$
 ^\.circleci$
+^API$

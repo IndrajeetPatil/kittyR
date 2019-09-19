@@ -85,7 +85,7 @@ kittyR <- function(url = NULL,
     df_combined <- kittyR::kitty_pics_df(url = url)
   }
 
-  # create a temporary dierctory
+  # create a temporary directory
   temporary_file_location <- paste0(tempdir(), "/kitties.png")
 
   # download a random image

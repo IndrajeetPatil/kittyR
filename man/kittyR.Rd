@@ -4,8 +4,7 @@
 \alias{kittyR}
 \title{Cats in R console.}
 \usage{
-kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE,
-  ...)
+kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE, ...)
 }
 \arguments{
 \item{url}{URL for the source from which individual image URLs are to be
