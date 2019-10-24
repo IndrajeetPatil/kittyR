@@ -31,7 +31,6 @@
 #' @importFrom dplyr %>% mutate filter
 #' @importFrom stringr str_split str_remove_all
 #' @importFrom graphics plot
-#' @importFrom ellipsis check_dots_used
 #'
 #' @examples
 #' # relying on default collection
@@ -55,7 +54,6 @@ kittyR <- function(url = NULL,
                    sound = 3,
                    only_kitten = FALSE,
                    ...) {
-  ellipsis::check_dots_used()
 
   # if no url is provided
   if (is.null(url)) {

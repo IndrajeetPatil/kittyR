@@ -1,3 +1,4 @@
+^\cache$
 ^codemeta\.json$
 ^Meta$
 ^doc$
@@ -7,6 +8,7 @@
 ^Rplots.pdf$
 ^README-.*\.png$
 ^CONDUCT\.md$
+^SECURITY\.md$
 ^cran-comments\.md$
 ^CODE_OF_CONDUCT\.md$
 ^SUPPORT\.md$
@@ -29,4 +31,10 @@ tests\^spelling
 ^LICENSE\.md$
 ^\.lintr$
 ^\.circleci$
+^tests/manual$
+^revdep$
+^\.covrignore$
+^\.github/ISSUE_TEMPLATE$
+^paper.*$
+references.bib
 ^API$
