@@ -50,8 +50,9 @@ set.seed(111)
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
 
 # provide a custom URL
+set.seed(300)
 kittyR::kittyR(
-  url = "https://visualhunt.com/photos/cat/",
+  url = "https://pixabay.com/en/photos/kitten/",
   meow = FALSE
 )
 }

@@ -24,7 +24,7 @@ Imports:
     imager (>= 0.41.2),
     magrittr,
     purrr (>= 0.3.3),
-    rvest (>= 0.3.4),
+    rvest (>= 0.3.5),
     stringr (>= 1.4.0),
     tibble (>= 2.1.3)
 Suggests: 
@@ -34,4 +34,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.99.9001
+RoxygenNote: 7.0.0
