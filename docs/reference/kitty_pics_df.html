@@ -79,7 +79,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">kittyR</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.1</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">0.0.2</span>
       </span>
     </div>
 
@@ -145,22 +145,20 @@ extracted.</p></td>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/kittyR/man/kitty_pics_df.html'>kitty_pics_df</a></span>(<span class='kw'>url</span> <span class='kw'>=</span> <span class='st'>"https://pixabay.com/en/photos/cat/"</span>)</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 184 x 3</span><span>
-#&gt;    image_type    id url                                                         
-#&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>                                                       
-#&gt; </span><span style='color: #BCBCBC;'> 1</span><span> 2              1 https://cdn.pixabay.com/photo/2012/02/27/15/35/africa-17335~
-#&gt; </span><span style='color: #BCBCBC;'> 2</span><span> 2              2 https://cdn.pixabay.com/photo/2012/02/27/15/35/africa-17335~
-#&gt; </span><span style='color: #BCBCBC;'> 3</span><span> 2              3 https://cdn.pixabay.com/photo/2012/02/27/16/57/animal-17430~
-#&gt; </span><span style='color: #BCBCBC;'> 4</span><span> 2              4 https://cdn.pixabay.com/photo/2012/02/27/16/57/animal-17430~
-#&gt; </span><span style='color: #BCBCBC;'> 5</span><span> 2              5 https://cdn.pixabay.com/photo/2012/03/01/00/28/cheetah-1962~
-#&gt; </span><span style='color: #BCBCBC;'> 6</span><span> 2              6 https://cdn.pixabay.com/photo/2012/03/01/00/28/cheetah-1962~
-#&gt; </span><span style='color: #BCBCBC;'> 7</span><span> 2              7 https://cdn.pixabay.com/photo/2012/10/12/17/12/cat-61079__3~
-#&gt; </span><span style='color: #BCBCBC;'> 8</span><span> 2              8 https://cdn.pixabay.com/photo/2012/10/12/17/12/cat-61079__4~
-#&gt; </span><span style='color: #BCBCBC;'> 9</span><span> 2              9 https://cdn.pixabay.com/photo/2012/11/26/13/58/cat-67345__3~
-#&gt; </span><span style='color: #BCBCBC;'>10</span><span> 2             10 https://cdn.pixabay.com/photo/2012/11/26/13/58/cat-67345__4~
-#&gt; </span><span style='color: #949494;'># ... with 174 more rows</span><span></div></span></pre>
+    <pre class="examples"><div class='input'><span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/kittyR/man/kitty_pics_df.html'>kitty_pics_df</a></span>(<span class='st'>"https://unsplash.com/s/photos/kitten/"</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 9 x 3</span><span>
+#&gt;   image_type    id url                                                          
+#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                                                        
+#&gt; </span><span style='color: #555555;'>1</span><span> 1              1 https://images.unsplash.com/photo-1513977055326-8ae6272d90a7…
+#&gt; </span><span style='color: #555555;'>2</span><span> 1              2 https://images.unsplash.com/photo-1513977055326-8ae6272d90a7…
+#&gt; </span><span style='color: #555555;'>3</span><span> 1              3 https://images.unsplash.com/photo-1513977055326-8ae6272d90a7…
+#&gt; </span><span style='color: #555555;'>4</span><span> 1              4 https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ix…
+#&gt; </span><span style='color: #555555;'>5</span><span> 1              5 https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ix…
+#&gt; </span><span style='color: #555555;'>6</span><span> 1              6 https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ix…
+#&gt; </span><span style='color: #555555;'>7</span><span> 1              7 https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ix…
+#&gt; </span><span style='color: #555555;'>8</span><span> 1              8 https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ix…
+#&gt; </span><span style='color: #555555;'>9</span><span> 1              9 https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ix…</div></span></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>

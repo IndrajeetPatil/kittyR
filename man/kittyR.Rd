@@ -32,10 +32,10 @@ This function displays a picture of a cat and plays a short
 sound clip containing cat meow.
 Currently, the images are collected from the following sources-
 \enumerate{
-\item \url{https://pixabay.com/en/photos/cat/}
-\item \url{https://www.pexels.com/search/cat/}
-\item \url{https://pixabay.com/en/photos/kitten/}
-\item \url{https://www.pexels.com/search/kitten/}
+\item \url{https://unsplash.com/s/photos/cat/}
+\item \url{https://www.reshot.com/search/cat/}
+\item \url{https://unsplash.com/s/photos/kitten/}
+\item \url{https://www.reshot.com/search/kitten/}
 }
 The sound files come from the following CC BY 3.0 source:
 \url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
@@ -52,7 +52,7 @@ kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
 # provide a custom URL
 set.seed(300)
 kittyR::kittyR(
-  url = "https://pixabay.com/en/photos/kitten/",
+  url = "https://unsplash.com/s/photos/cat/",
   meow = FALSE
 )
 }

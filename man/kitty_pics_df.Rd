@@ -16,5 +16,5 @@ extracted.}
 Prepare a dataframe with URLs for cat pics.
 }
 \examples{
-kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
+kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")
 }

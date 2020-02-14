@@ -6,10 +6,10 @@
 #'   sound clip containing cat meow.
 #' Currently, the images are collected from the following sources-
 #' \enumerate{
-#' \item \url{https://pixabay.com/en/photos/cat/}
-#' \item \url{https://www.pexels.com/search/cat/}
-#' \item \url{https://pixabay.com/en/photos/kitten/}
-#' \item \url{https://www.pexels.com/search/kitten/}
+#' \item \url{https://unsplash.com/s/photos/cat/}
+#' \item \url{https://www.reshot.com/search/cat/}
+#' \item \url{https://unsplash.com/s/photos/kitten/}
+#' \item \url{https://www.reshot.com/search/kitten/}
 #' }
 #' The sound files come from the following CC BY 3.0 source:
 #' \url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
@@ -44,7 +44,7 @@
 #' # provide a custom URL
 #' set.seed(300)
 #' kittyR::kittyR(
-#'   url = "https://pixabay.com/en/photos/kitten/",
+#'   url = "https://unsplash.com/s/photos/cat/",
 #'   meow = FALSE
 #' )
 #' @export
@@ -61,15 +61,15 @@ kittyR <- function(url = NULL,
     # if only kitten pics are needed
     if (isTRUE(only_kitten)) {
       url_list <- list(url = tibble::lst(
-        "https://pixabay.com/en/photos/kitten/",
-        "https://www.pexels.com/search/kitten/"
+        "https://unsplash.com/s/photos/kitten/",
+        "https://www.reshot.com/search/kitten/"
       ))
     } else {
       url_list <- list(url = tibble::lst(
-        "https://pixabay.com/en/photos/cat/",
-        "https://www.pexels.com/search/cat/",
-        "https://pixabay.com/en/photos/kitten/",
-        "https://www.pexels.com/search/kitten/"
+        "https://unsplash.com/s/photos/cat/",
+        "https://www.reshot.com/search/cat/",
+        "https://unsplash.com/s/photos/kitten/",
+        "https://www.reshot.com/search/kitten/",
       ))
     }
 
@@ -81,7 +81,7 @@ kittyR <- function(url = NULL,
         .id = "source"
       )
   } else {
-    df_combined <- kittyR::kitty_pics_df(url = url)
+    df_combined <- kitty_pics_df(url)
   }
 
   # create a temporary directory
@@ -101,7 +101,5 @@ kittyR <- function(url = NULL,
   graphics::plot(kitty, yaxt = "n", axes = FALSE)
 
   # if needed, play a meow sound
-  if (isTRUE(meow)) {
-    kittyR::meowR(sound = sound)
-  }
+  if (isTRUE(meow)) kittyR::meowR(sound = sound)
 }

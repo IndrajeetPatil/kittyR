@@ -6,18 +6,19 @@
 #' @param ... Currently ignored.
 #'
 #' @examples
-#' kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
+#' kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")
 #' @export
 
 # function body
 kitty_pics_df <- function(url, ...) {
   # getting all cat images from webpage of interest
   kitties <-
-    rvest::html_session(url = url) %>%
+    rvest::html_session(url) %>%
     rvest::html_nodes(x = ., css = "img")
 
   # exclusion pattern
-  exclude_str_pattern <- "logo|static|users|avatar|assets|hazelnut"
+  exclude_str_pattern <-
+    "logo|static|users|avatar|profile|gif|scorecardresearch|facebook|trkn"
 
   # getting static images
   df_static <-

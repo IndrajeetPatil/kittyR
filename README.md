@@ -12,7 +12,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2019--10--24-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--02--14-yellowgreen.svg)](/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
@@ -36,7 +36,7 @@ In case you want a picture of a kitty:
 
 ``` r
 # to always have the same kitty on README
-set.seed(100)
+set.seed(10)
 
 # show me the kitty NOW!
 kittyR::kittyR()
@@ -50,7 +50,7 @@ argument.
 
 ``` r
 # to always have the same kitty on README
-set.seed(100)
+set.seed(101)
 
 # show me the kitten NOW!
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
@@ -61,10 +61,10 @@ kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
 The collection of cat pictures comes from the following collections of
 freely available images:
 
-  - <https://pixabay.com/en/photos/cat/>
-  - <https://www.pexels.com/search/cat/>
-  - <https://pixabay.com/en/photos/kitten/>
-  - <https://www.pexels.com/search/kitten/>
+  - <https://unsplash.com/s/photos/cat/>
+  - <https://www.reshot.com/search/cat/>
+  - <https://unsplash.com/s/photos/kitten/>
+  - <https://www.reshot.com/search/kitten/>
 
 In case you just want to hear a meow either *apropos* nothing or at the
 end of execution of some code to let you know that the execution is

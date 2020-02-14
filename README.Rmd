@@ -47,7 +47,7 @@ In case you want a picture of a kitty:
 
 ```{r kittyR1}
 # to always have the same kitty on README
-set.seed(100)
+set.seed(10)
 
 # show me the kitty NOW!
 kittyR::kittyR()
@@ -58,7 +58,7 @@ etc.). If you want only kittens, you can use an additional argument.
 
 ```{r kittyR2}
 # to always have the same kitty on README
-set.seed(100)
+set.seed(101)
 
 # show me the kitten NOW!
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
@@ -67,10 +67,10 @@ kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
 The collection of cat pictures comes from the following collections of freely
 available images:
 
-  - <https://pixabay.com/en/photos/cat/>
-  - <https://www.pexels.com/search/cat/>
-  - <https://pixabay.com/en/photos/kitten/>
-  - <https://www.pexels.com/search/kitten/>
+  - <https://unsplash.com/s/photos/cat/>
+  - <https://www.reshot.com/search/cat/>
+  - <https://unsplash.com/s/photos/kitten/>
+  - <https://www.reshot.com/search/kitten/>
 
 In case you just want to hear a meow either *apropos* nothing or at the end of
 execution of some code to let you know that the execution is complete, just
