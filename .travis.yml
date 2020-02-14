@@ -4,29 +4,31 @@ language: r
 r:
   - release
   - devel
-
-sudo: required
-cache: packages
-bioc_required: true
+latex: true
 warnings_are_errors: false
 
-env:
-  global:
-    - R_MAX_NUM_DLLS=999
-    - _R_CHECK_FORCE_SUGGESTS_=FALSE
+cache:
+  - packages
+  - ccache
 
 r_binary_packages:
   - magrittr
+  - rlang
 
 r_packages:
-  - rlang
   - bindrcpp
   - purrr
   - dplyr
   - stringr
+
+r_github_packages:
+  - jimhester/lintr
 
 notifications:
   email:
   on_success: change
   on_failure: change
 
+after_success:
+  - R CMD INSTALL $PKG_TARBALL
+  - Rscript -e 'lintr::lint_package()'
