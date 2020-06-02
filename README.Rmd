@@ -24,15 +24,19 @@ knitr::opts_chunk$set(
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
 
+# Raison d’être <img src="man/figures/logo.png" align="right" width="360" />
+
 This package is designed for rainy days when your results are heartbreaking or
 when no matter what you try, you can't seem to get rid of that bug. Take a
 respite from those negative thoughts by accessing kitty pics **and** their
 adorable meows right from your R console `r emo::ji("heart_eyes_cat")` and then
 get back to work again!
 
+# Installation
+
 You can get the development version from [GitHub](https://github.com/) with:
 
-``` r
+```{r eval=FALSE}
 # install.packages("remotes")
 remotes::install_github("IndrajeetPatil/kittyR")
 ```
@@ -40,6 +44,8 @@ remotes::install_github("IndrajeetPatil/kittyR")
 ```{r include = FALSE}
 library(kittyR)
 ```
+
+# Functions
 
 There are only two available functions in this package-
 
@@ -92,3 +98,13 @@ suggesting including `meowR` function as a replacement for `beepR`.
 
 May these kitties bring some joy and amusement during your stressful data
 digging jobs!
+
+# Acknowledgments
+
+The hexsticker was generously designed by Sarah Otterstetter (Max Planck
+Institute for Human Development, Berlin).
+
+# Code of Conduct
+
+Please note that the `tidyBF` project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

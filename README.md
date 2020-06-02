@@ -12,15 +12,19 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--02--14-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--06--02-yellowgreen.svg)](/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
+
+# Raison d’être <img src="man/figures/logo.png" align="right" width="360" />
 
 This package is designed for rainy days when your results are
 heartbreaking or when no matter what you try, you can’t seem to get rid
 of that bug. Take a respite from those negative thoughts by accessing
 kitty pics **and** their adorable meows right from your R console 😻 and
 then get back to work again\!
+
+# Installation
 
 You can get the development version from [GitHub](https://github.com/)
 with:
@@ -29,6 +33,8 @@ with:
 # install.packages("remotes")
 remotes::install_github("IndrajeetPatil/kittyR")
 ```
+
+# Functions
 
 There are only two available functions in this package-
 
@@ -88,3 +94,15 @@ including `meowR` function as a replacement for `beepR`.
 
 May these kitties bring some joy and amusement during your stressful
 data digging jobs\!
+
+# Acknowledgments
+
+The hexsticker was generously designed by Sarah Otterstetter (Max Planck
+Institute for Human Development, Berlin).
+
+# Code of Conduct
+
+Please note that the `tidyBF` project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
