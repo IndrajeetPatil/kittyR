@@ -26,25 +26,6 @@ repos:
   CRAN: https://cloud.r-project.org
   ropensci: http://packages.ropensci.org
 
-r_packages:
-  - Rcpp
-  - RcppEigen
-  - mvtnorm
-  - rstan
-  - StanHeaders
-  - LaplacesDemon
-  - logspline
-  - testthat
-  - devtools
-  - remotes
-  - knitr
-  - rmarkdown
-  - coda
-  - rstantools
-  - bridgesampling
-  - BH
-  - metaBMA
-
 r_github_packages:
   - jimhester/lintr
   - r-lib/covr
