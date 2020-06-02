@@ -1,5 +1,3 @@
-context("kitty_pics_df")
-
 testthat::test_that(
   desc = "kitty_pics_df works as expected",
   code = {
@@ -8,11 +6,11 @@ testthat::test_that(
     testthat::skip_on_appveyor()
 
     set.seed(123)
-    df1 <- kittyR::kitty_pics_df(url = "https://pixabay.com/en/photos/cat/")
-    df2 <- kittyR::kitty_pics_df(url = "https://www.pexels.com/search/cat/")
+    df1 <- kittyR::kitty_pics_df(url = "https://unsplash.com/s/photos/cat/")
+    df2 <- kittyR::kitty_pics_df(url = "https://www.reshot.com/search/kitten/")
 
-    testthat::expect_equal(dim(df1), c(184L, 3L))
-    testthat::expect_equal(dim(df2), c(36L, 3L))
+    testthat::expect_equal(dim(df1), c(9L, 3L))
+    testthat::expect_equal(dim(df2), c(33L, 3L))
     testthat::expect_is(df1, "tbl_df")
   }
 )

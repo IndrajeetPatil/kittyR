@@ -6,7 +6,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "kittyR",
   "description": "Get pictures of cats and their meows from your R\n    console.",
-  "name": "kittyR: Kitty pictures and meows from R console",
+  "name": "kittyR: Kitty Pictures and Meows from R Console",
   "codeRepository": "https://github.com/IndrajeetPatil/kittyR",
   "issueTracker": "https://github.com/IndrajeetPatil/kittyR/issues",
   "license": "https://spdx.org/licenses/MIT",
@@ -191,12 +191,20 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "7786.173KB",
+  "fileSize": "7786.472KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
   "developmentStatus": ["https://www.tidyverse.org/lifecycle/#experimental", "http://www.repostatus.org/#active"],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",
   "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md",
   "contributor": {},
-  "copyrightHolder": {},
+  "copyrightHolder": [
+    {
+      "@type": "Person",
+      "givenName": "Indrajeet",
+      "familyName": "Patil",
+      "email": "patilindrajeet.science@gmail.com",
+      "@id": "https://orcid.org/0000-0003-1995-6531"
+    }
+  ],
   "funder": {}
 }
