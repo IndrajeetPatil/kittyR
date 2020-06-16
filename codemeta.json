@@ -78,7 +78,6 @@
       "@type": "SoftwareApplication",
       "identifier": "beepr",
       "name": "beepr",
-      "version": ">= 1.3",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -101,18 +100,6 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "glue",
-      "name": "glue",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=glue"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "graphics",
       "name": "graphics"
     },
@@ -120,7 +107,6 @@
       "@type": "SoftwareApplication",
       "identifier": "imager",
       "name": "imager",
-      "version": ">= 0.41.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -157,7 +143,6 @@
       "@type": "SoftwareApplication",
       "identifier": "rvest",
       "name": "rvest",
-      "version": ">= 0.3.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -191,7 +176,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "7765.928KB",
+  "fileSize": "7773.77KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
   "developmentStatus": ["https://www.tidyverse.org/lifecycle/#experimental", "http://www.repostatus.org/#active"],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",

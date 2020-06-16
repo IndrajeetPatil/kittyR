@@ -5,6 +5,10 @@
 #'   extracted.
 #' @param ... Currently ignored.
 #'
+#' @importFrom rvest html_session html_session html_attr
+#' @importFrom stringr str_split str_detect str_remove_all
+#' @importFrom dplyr filter mutate bind_rows arrange row_number
+#'
 #' @examples
 #' kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")
 #' @export
@@ -48,11 +52,7 @@ kitty_pics_df <- function(url, ...) {
     tibble::enframe(x = ., name = "id", value = "url")
 
   # combining both images sets and giving them a unique id
-  df_combined <-
-    dplyr::bind_rows(df_static, df_srcset, .id = "image_type") %>%
+  dplyr::bind_rows(df_static, df_srcset, .id = "image_type") %>%
     dplyr::mutate(.data = ., id = dplyr::row_number(x = url)) %>%
     dplyr::arrange(.data = ., id)
-
-  # return the combined dataframe
-  return(df_combined)
 }

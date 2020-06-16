@@ -21,10 +21,10 @@ meowR <- function(sound = 3) {
   # if sound is out of range, give warning and play random sound
   if (!(sound %in% 1:6)) {
     message(
-      glue::glue(
-        "Warning: There are currently only 6 sounds available, you requested sound {sound}.\n
-        Please see details in `meowR` help.\n
-        Playing a random meow."
+      paste0(
+        "Warning: There are currently only 6 sounds available, you requested sound ", sound, ".\n",
+        "Please see details in `meowR` help.\n",
+        "Playing a random meow for now."
       )
     )
 
@@ -33,14 +33,15 @@ meowR <- function(sound = 3) {
   }
 
   # a vector of cat sounds
-  sounds <- c(
-    Tom = "1.wav",
-    Toops = "2.wav",
-    Eno = "3.wav",
-    Pari = "4.wav",
-    Cicci = "5.wav",
-    Titti = "6.wav"
-  )
+  sounds <-
+    c(
+      Tom = "1.wav",
+      Toops = "2.wav",
+      Eno = "3.wav",
+      Pari = "4.wav",
+      Cicci = "5.wav",
+      Titti = "6.wav"
+    )
 
   # giving the sound path
   sound_path <-

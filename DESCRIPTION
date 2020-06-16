@@ -17,14 +17,13 @@ BugReports: https://github.com/IndrajeetPatil/kittyR/issues
 Depends: 
     R (>= 3.5.0)
 Imports:
-    beepr (>= 1.3),
+    beepr,
     dplyr,
-    glue,
     graphics,
-    imager (>= 0.41.2),
+    imager,
     magrittr,
     purrr,
-    rvest (>= 0.3.5),
+    rvest,
     stringr,
     tibble
 Suggests: 
