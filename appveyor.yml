@@ -15,7 +15,7 @@ environment:
   global:
     USE_RTOOLS: true
   matrix:
-  - R_VERSION: 3.5.0
+  - R_VERSION: release
     R_ARCH: x64
     GCC_PATH: mingw_64
 

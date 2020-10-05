@@ -16,7 +16,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2020-06-03 r78637)",
+  "runtimePlatform": "R Under development (unstable) (2020-09-11 r79188)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -72,7 +72,7 @@
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
-      "version": ">= 3.5.0"
+      "version": ">= 3.6.0"
     },
     {
       "@type": "SoftwareApplication",
@@ -176,9 +176,9 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "7773.77KB",
+  "fileSize": "7030.3KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
-  "developmentStatus": ["https://www.tidyverse.org/lifecycle/#experimental", "http://www.repostatus.org/#active"],
+  "developmentStatus": ["https://www.tidyverse.org/lifecycle/#experimental", "https://www.repostatus.org/#active"],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",
   "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md",
   "contributor": {},

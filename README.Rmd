@@ -15,11 +15,11 @@ knitr::opts_chunk$set(
 
 # kittyR: Kitty pictures and meows from R console
 
-[![CRAN_Release_Badge](http://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
+[![CRAN_Release_Badge](https://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
 [![Travis Build Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR) 
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
@@ -53,7 +53,7 @@ In case you want a picture of a kitty:
 
 ```{r kittyR1}
 # to always have the same kitty on README
-set.seed(10)
+set.seed(166)
 
 # show me the kitty NOW!
 kittyR::kittyR()
@@ -64,7 +64,7 @@ etc.). If you want only kittens, you can use an additional argument.
 
 ```{r kittyR2}
 # to always have the same kitty on README
-set.seed(101)
+set.seed(122)
 
 # show me the kitten NOW!
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)

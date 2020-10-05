@@ -154,7 +154,7 @@ Currently, the images are collected from the following sources-</p><ol>
 <a href='http://soundbible.com/suggest.php?q=cat+meow&amp;x=0&amp;y=0'>http://soundbible.com/suggest.php?q=cat+meow&amp;x=0&amp;y=0</a></p>
     </div>
 
-    <pre class="usage"><span class='fu'>kittyR</span>(<span class='kw'>url</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sound</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>only_kitten</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>kittyR</span><span class='op'>(</span>url <span class='op'>=</span> <span class='cn'>NULL</span>, meow <span class='op'>=</span> <span class='cn'>TRUE</span>, sound <span class='op'>=</span> <span class='fl'>3</span>, only_kitten <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -197,17 +197,20 @@ selected (default: <code>FALSE</code>).</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># relying on default collection</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span>(<span class='fl'>122</span>)
-<span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'>kittyR</span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>122</span><span class='op'>)</span>
+<span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>kittyR</span><span class='op'>(</span>meow <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># in case you want only pics of kittens</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span>(<span class='fl'>111</span>)
-<span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'>kittyR</span>(<span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>only_kitten</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='kittyR-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>111</span><span class='op'>)</span>
+<span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>kittyR</span><span class='op'>(</span>meow <span class='op'>=</span> <span class='cn'>FALSE</span>, only_kitten <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+</div><div class='img'><img src='kittyR-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># provide a custom URL</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span>(<span class='fl'>300</span>)
-<span class='kw pkg'>kittyR</span><span class='kw ns'>::</span><span class='fu'>kittyR</span>(
-  <span class='kw'>url</span> <span class='kw'>=</span> <span class='st'>"https://unsplash.com/s/photos/cat/"</span>,
-  <span class='kw'>meow</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
-)</div><div class='img'><img src='kittyR-3.png' alt='' width='700' height='433' /></div></pre>
+<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>300</span><span class='op'>)</span>
+<span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>kittyR</span><span class='op'>(</span>
+  url <span class='op'>=</span> <span class='st'>"https://unsplash.com/s/photos/cat/"</span>,
+  meow <span class='op'>=</span> <span class='cn'>FALSE</span>
+<span class='op'>)</span>
+</div><div class='img'><img src='kittyR-3.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -223,7 +226,7 @@ selected (default: <code>FALSE</code>).</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

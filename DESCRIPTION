@@ -15,7 +15,7 @@ License: MIT + file LICENSE
 URL: https://github.com/IndrajeetPatil/kittyR
 BugReports: https://github.com/IndrajeetPatil/kittyR/issues
 Depends: 
-    R (>= 3.5.0)
+    R (>= 3.6.0)
 Imports:
     beepr,
     dplyr,
@@ -33,4 +33,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0.9000
+RoxygenNote: 7.1.1
