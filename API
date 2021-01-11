@@ -1,3 +1,16 @@
-kitty_pics_df(url, ...)
+# API for kittyR package
+
+## Exported functions
+
 kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE, ...)
+kitty_pics_df(url, ...)
 meowR(sound = 3)
+
+## Reexported objects
+
+magrittr::%$%
+magrittr::%<>%
+magrittr::%>%
+tibble::as_tibble
+tibble::enframe
+tibble::tibble

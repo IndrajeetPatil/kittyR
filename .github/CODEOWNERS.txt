@@ -1,2 +1,2 @@
-# CODEOWNERS for kittyR
+# CODEOWNERS for ggstatsplot
 .github/CODEOWNERS @IndrajeetPatil

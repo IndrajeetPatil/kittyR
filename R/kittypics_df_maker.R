@@ -22,7 +22,7 @@ kitty_pics_df <- function(url, ...) {
 
   # exclusion pattern
   exclude_str_pattern <-
-    "logo|static|users|avatar|profile|gif|scorecardresearch|facebook|trkn"
+    "logo|static|users|avatar|profile|gif|scorecardresearch|facebook|trkn|svg|build|file-"
 
   # getting static images
   df_static <-

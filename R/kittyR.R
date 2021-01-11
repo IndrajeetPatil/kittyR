@@ -11,8 +11,9 @@
 #' \item \url{https://unsplash.com/s/photos/kitten/}
 #' \item \url{https://www.reshot.com/search/kitten/}
 #' }
+#'
 #' The sound files come from the following CC BY 3.0 source:
-#' \url{http://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
+#' \url{https://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
 #'
 #' @param url URL for the source from which individual image URLs are to be
 #'   extracted. Default is `NULL`. If `NULL`, a randomly drawn image from the

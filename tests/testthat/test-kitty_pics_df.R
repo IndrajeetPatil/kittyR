@@ -1,16 +1,18 @@
-testthat::test_that(
+test_that(
   desc = "kitty_pics_df works as expected",
   code = {
-    testthat::skip_on_cran()
-    testthat::skip_on_travis()
-    testthat::skip_on_appveyor()
+    skip_on_cran()
+    skip_on_travis()
+    skip_on_appveyor()
 
     set.seed(123)
-    df1 <- kittyR::kitty_pics_df(url = "https://unsplash.com/s/photos/cat/")
-    df2 <- kittyR::kitty_pics_df(url = "https://www.reshot.com/search/kitten/")
+    df1 <- kitty_pics_df(url = "https://unsplash.com/s/photos/cat/")
+    set.seed(123)
+    df2 <- kitty_pics_df(url = "https://www.reshot.com/search/kitten/")
 
-    testthat::expect_equal(dim(df1), c(12L, 3L))
-    testthat::expect_equal(dim(df2), c(36L, 3L))
-    testthat::expect_s3_class(df1, "tbl_df")
+    expect_equal(dim(df1)[2], 3L)
+    expect_equal(dim(df2)[2], 3L)
+    expect_true(dim(df1)[1] > 0L & dim(df2)[1] > 0L)
+    expect_s3_class(df1, "tbl_df")
   }
 )

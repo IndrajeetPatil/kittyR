@@ -53,7 +53,7 @@ In case you want a picture of a kitty:
 
 ```{r kittyR1}
 # to always have the same kitty on README
-set.seed(100)
+set.seed(123)
 
 # show me the kitty NOW!
 kittyR::kittyR()
@@ -64,7 +64,7 @@ etc.). If you want only kittens, you can use an additional argument.
 
 ```{r kittyR2}
 # to always have the same kitty on README
-set.seed(122)
+set.seed(14)
 
 # show me the kitten NOW!
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
@@ -93,8 +93,7 @@ If you have a kitty meow that you like and would like to include in the package,
 please either make a PR or e-mail it to me and I will include it.
 
 This package was inspired by [pupR](https://github.com/melissanjohnson/pupR)
-package by Melissa Innerst. Thanks are due to my lab buddy Jonathan Phillips for
-suggesting including `meowR` function as a replacement for `beepR`.
+package by Melissa Innerst.
 
 May these kitties bring some joy and amusement during your stressful data
 digging jobs!
