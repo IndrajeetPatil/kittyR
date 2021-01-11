@@ -9,8 +9,8 @@ testthat::test_that(
     df1 <- kittyR::kitty_pics_df(url = "https://unsplash.com/s/photos/cat/")
     df2 <- kittyR::kitty_pics_df(url = "https://www.reshot.com/search/kitten/")
 
-    testthat::expect_equal(dim(df1), c(9L, 3L))
-    testthat::expect_equal(dim(df2), c(33L, 3L))
-    testthat::expect_is(df1, "tbl_df")
+    testthat::expect_equal(dim(df1), c(12L, 3L))
+    testthat::expect_equal(dim(df2), c(36L, 3L))
+    testthat::expect_s3_class(df1, "tbl_df")
   }
 )
