@@ -34,6 +34,7 @@
 #' @importFrom graphics plot
 #'
 #' @examples
+#' \donttest{
 #' # relying on default collection
 #' set.seed(122)
 #' kittyR::kittyR(meow = FALSE)
@@ -48,6 +49,7 @@
 #'   url = "https://unsplash.com/s/photos/cat/",
 #'   meow = FALSE
 #' )
+#' }
 #' @export
 
 # function body

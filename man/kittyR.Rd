@@ -42,6 +42,7 @@ The sound files come from the following CC BY 3.0 source:
 \url{https://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
 }
 \examples{
+\donttest{
 # relying on default collection
 set.seed(122)
 kittyR::kittyR(meow = FALSE)
@@ -56,6 +57,7 @@ kittyR::kittyR(
   url = "https://unsplash.com/s/photos/cat/",
   meow = FALSE
 )
+}
 }
 \author{
 \href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}

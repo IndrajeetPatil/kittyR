@@ -12,7 +12,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--11-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--11-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
@@ -46,10 +46,6 @@ set.seed(123)
 
 # show me the kitty NOW!
 kittyR::kittyR()
-#> Warning: `html_session()` is deprecated as of rvest 1.0.0.
-#> Please use `session()` instead.
-#> This warning is displayed once every 8 hours.
-#> Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
 
 <img src="man/figures/README-kittyR1-1.png" width="100%" />

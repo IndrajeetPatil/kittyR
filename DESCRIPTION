@@ -1,7 +1,7 @@
 Type: Package
 Package: kittyR
 Title: Kitty Pictures and Meows from R Console
-Version: 0.0.2
+Version: 1.0.0
 Authors@R: 
     person(given = "Indrajeet",
            family = "Patil",
