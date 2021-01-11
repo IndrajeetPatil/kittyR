@@ -19,9 +19,11 @@ environment:
     R_ARCH: x64
     GCC_PATH: mingw_64
 
+  # utf8 available only as source
   - R_VERSION: devel
     R_ARCH: x64
     GCC_PATH: mingw_64
+    PKGTYPE: both
 
   - R_VERSION: oldrel
     R_ARCH: x64
