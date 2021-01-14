@@ -36,6 +36,12 @@ get back to work again!
 
 # Installation
 
+When available on `CRAN`, you can download it by running:
+
+```{r eval=FALSE}
+install.packages("kittyR")
+```
+
 You can get the development version from [GitHub](https://github.com/) with:
 
 ```{r eval=FALSE}

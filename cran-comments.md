@@ -13,3 +13,6 @@
 tool for me to deal with pandemic-driven stress and grey, winter weathers. And I
 think the global R community will feel the same about using it. (It is similar
 to the current CRAN packages like 'cowsay' or 'dadjoke'.)
+
+* All arguments have `return` value in `.Rd` documentation and none of the
+examples use `\dontrun{}` anymore.

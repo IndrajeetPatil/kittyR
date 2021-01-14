@@ -12,11 +12,18 @@ played by either specifying one of the built in sounds, specifying the path
 to a \code{.wav} file or specifying an url. There are currently 6 meows
 included. The default is \code{3}.}
 }
+\value{
+No return value, called for side effect (sound).
+}
 \description{
-Play a short kitty meow sound
+\Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
+
+\code{meowR} is inspired by \code{beepr::beep}, which plays a short sound to notify
+you, for example, when a script has finished. Instead of a beep, this
+function produced a meow.
 }
 \examples{
-\dontrun{
+\donttest{
 # play Eno's meow
 kittyR::meowR(sound = 4)
 }

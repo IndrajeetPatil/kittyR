@@ -47,7 +47,10 @@
 
 
 <meta property="og:title" content="Play a short kitty meow sound — meowR" />
-<meta property="og:description" content="Play a short kitty meow sound" />
+<meta property="og:description" content="
+meowR is inspired by beepr::beep, which plays a short sound to notify
+you, for example, when a script has finished. Instead of a beep, this
+function produced a meow." />
 <meta property="og:image" content="https://indrajeetpatil.github.io/kittyR/logo.png" />
 
 
@@ -129,7 +132,10 @@
     </div>
 
     <div class="ref-description">
-    <p>Play a short kitty meow sound</p>
+    <p><a href='https://www.tidyverse.org/lifecycle/#stable'><img src='figures/lifecycle-stable.svg' alt='Stable lifecycle'></a></p>
+<p><code>meowR</code> is inspired by <code><a href='https://rdrr.io/pkg/beepr/man/beep.html'>beepr::beep</a></code>, which plays a short sound to notify
+you, for example, when a script has finished. Instead of a beep, this
+function produced a meow.</p>
     </div>
 
     <pre class="usage"><span class='fu'>meowR</span><span class='op'>(</span>sound <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span></pre>
@@ -146,12 +152,15 @@ included. The default is <code>3</code>.</p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>No return value, called for side effect (sound).</p>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
     <p><a href='https://github.com/IndrajeetPatil/'>Indrajeet Patil</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'># \dontrun{</span>
+    <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
 <span class='co'># play Eno's meow</span>
 <span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>meowR</span><span class='op'>(</span>sound <span class='op'>=</span> <span class='fl'>4</span><span class='op'>)</span>
 <span class='co'># }</span>

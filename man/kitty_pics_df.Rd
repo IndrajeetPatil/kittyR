@@ -12,8 +12,14 @@ extracted.}
 
 \item{...}{Currently ignored.}
 }
+\value{
+A tibble containing extracted details from the provided URL.
+}
 \description{
-Prepare a dataframe with URLs for cat pics.
+\Sexpr[results=rd, stage=render]{rlang:::lifecycle("maturing")}
+
+Mostly useful for internal workings of this package, this function extracts
+images at given URL and returns it in a dataframe.
 }
 \examples{
 kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")

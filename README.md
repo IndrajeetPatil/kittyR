@@ -12,7 +12,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--11-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--14-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 
@@ -25,6 +25,12 @@ kitty pics **and** their adorable meows right from your R console 😻 and
 then get back to work again!
 
 # Installation
+
+When available on `CRAN`, you can download it by running:
+
+``` r
+install.packages("kittyR")
+```
 
 You can get the development version from [GitHub](https://github.com/)
 with:

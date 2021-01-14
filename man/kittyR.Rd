@@ -28,8 +28,11 @@ selected (default: \code{FALSE}).}
 A photo of a cat is downloaded and displayed in the plot window.
 }
 \description{
-This function displays a picture of a cat and plays a short
-sound clip containing cat meow.
+\Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
+
+This function displays a picture of a cat and plays a short sound clip
+containing cat meow.
+
 Currently, the images are collected from the following sources-
 \enumerate{
 \item \url{https://unsplash.com/s/photos/cat/}

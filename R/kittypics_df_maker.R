@@ -1,6 +1,15 @@
 #' @title Prepare a dataframe with URLs for cat pics.
 #' @name kitty_pics_df
 #'
+#' @description
+#'
+#' \Sexpr[results=rd, stage=render]{rlang:::lifecycle("maturing")}
+#'
+#' Mostly useful for internal workings of this package, this function extracts
+#' images at given URL and returns it in a dataframe.
+#'
+#' @return A tibble containing extracted details from the provided URL.
+#'
 #' @param url URL for the source from which individual image URLs are to be
 #'   extracted.
 #' @param ... Currently ignored.
