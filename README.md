@@ -4,6 +4,8 @@
 # kittyR: Kitty pictures and meows from R console
 
 [![CRAN\_Release\_Badge](https://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
+[![CRAN
+Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html)
 [![Travis Build
 Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
 [![AppVeyor Build
@@ -12,9 +14,11 @@ Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--14-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--18-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
+[![Total downloads
+badge](https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue)](https://CRAN.R-project.org/package=kittyR)
 
 # Raison d’être <img src="man/figures/logo.png" align="right" width="360" />
 
@@ -107,7 +111,7 @@ Institute for Human Development, Berlin).
 
 # Code of Conduct
 
-Please note that the `tidyBF` project is released with a [Contributor
+Please note that the `kittyR` project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.

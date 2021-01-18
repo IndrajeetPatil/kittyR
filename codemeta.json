@@ -10,13 +10,13 @@
   "codeRepository": "https://github.com/IndrajeetPatil/kittyR",
   "issueTracker": "https://github.com/IndrajeetPatil/kittyR/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.0.0",
+  "version": "1.0.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R Under development (unstable) (2021-01-02 r79767)",
+  "runtimePlatform": "R Under development (unstable) (2021-01-13 r79826)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -176,7 +176,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "7622.658KB",
+  "fileSize": "7679.335KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
   "developmentStatus": ["https://www.tidyverse.org/lifecycle/#experimental", "https://www.repostatus.org/#active"],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md",
@@ -191,5 +191,6 @@
       "@id": "https://orcid.org/0000-0003-1995-6531"
     }
   ],
-  "funder": {}
+  "funder": {},
+  "relatedLink": "https://CRAN.R-project.org/package=kittyR"
 }

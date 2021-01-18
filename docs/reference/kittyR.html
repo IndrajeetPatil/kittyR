@@ -101,7 +101,7 @@ https://soundbible.com/suggest.php?q=cat+meow&amp;amp;x=0&amp;amp;y=0" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">kittyR</a>
-        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">1.0.0</span>
+        <span class="version label label-danger" data-toggle="tooltip" data-placement="bottom" title="Unreleased version">1.0.0.9000</span>
       </span>
     </div>
 
@@ -200,7 +200,10 @@ selected (default: <code>FALSE</code>).</p></td>
 <span class='co'># relying on default collection</span>
 <span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>122</span><span class='op'>)</span>
 <span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>kittyR</span><span class='op'>(</span>meow <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
-</div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: `html_session()` is deprecated as of rvest 1.0.0.</span>
+#&gt; <span class='warning'>Please use `session()` instead.</span>
+#&gt; <span class='warning'><span style='color: #555555;'>This warning is displayed once every 8 hours.</span><span></span>
+#&gt; <span class='warning'></span><span style='color: #555555;'>Call `lifecycle::last_warnings()` to see where this warning was generated.</span><span></span></div><div class='img'><img src='kittyR-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># in case you want only pics of kittens</span>
 <span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>111</span><span class='op'>)</span>
 <span class='fu'>kittyR</span><span class='fu'>::</span><span class='fu'>kittyR</span><span class='op'>(</span>meow <span class='op'>=</span> <span class='cn'>FALSE</span>, only_kitten <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
@@ -212,7 +215,7 @@ selected (default: <code>FALSE</code>).</p></td>
   meow <span class='op'>=</span> <span class='cn'>FALSE</span>
 <span class='op'>)</span>
 </div><div class='img'><img src='kittyR-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'># }</span>
-</div></pre>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
