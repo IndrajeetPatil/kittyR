@@ -9,7 +9,7 @@ meowR(sound = 3)
 \arguments{
 \item{sound}{A character string or a number specifying what sound to be
 played by either specifying one of the built in sounds, specifying the path
-to a \code{.wav} file or specifying an url. There are currently 6 meows
+to a \code{.wav} file or specifying an URL. There are currently 6 meows
 included. The default is \code{3}.}
 }
 \value{

@@ -14,7 +14,7 @@
 #'
 #' @param sound A character string or a number specifying what sound to be
 #'   played by either specifying one of the built in sounds, specifying the path
-#'   to a `.wav` file or specifying an url. There are currently 6 meows
+#'   to a `.wav` file or specifying an URL. There are currently 6 meows
 #'   included. The default is `3`.
 #'
 #' @importFrom beepr beep
