@@ -10,11 +10,11 @@ Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.o
 Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--18-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2021--02--14-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
 [![GitHub code size in
 bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
 [![Total downloads
