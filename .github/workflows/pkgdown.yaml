@@ -21,7 +21,7 @@ jobs:
       # this is here because of an issue installing the imager package
       - name: Install XQuartz on macOS
         if: runner.os == 'macOS'
-        run: brew cask install xquartz
+        run: brew install xquartz --cask
 
       - name: Query dependencies
         run: |
