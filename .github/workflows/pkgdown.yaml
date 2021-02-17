@@ -18,6 +18,11 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
+      # this is here because of an issue installing the imager package
+      - name: Install XQuartz on macOS
+        if: runner.os == 'macOS'
+        run: brew cask install xquartz
+
       - name: Query dependencies
         run: |
           install.packages('remotes')
