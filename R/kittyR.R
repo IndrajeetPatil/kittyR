@@ -32,7 +32,7 @@
 #' @inheritParams meowR
 #' @param ... Additional arguments (currently ignored).
 #'
-#' @importFrom rvest html_session html_nodes html_attr
+#' @importFrom rvest session html_nodes html_attr
 #' @importFrom imager load.image
 #' @importFrom purrr map pmap_dfr
 #' @importFrom tibble as_tibble enframe lst
