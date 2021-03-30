@@ -31,7 +31,8 @@ A photo of a cat is downloaded and displayed in the plot window.
 \Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
 
 This function displays a picture of a cat and plays a short sound clip
-containing cat meow.
+containing cat meow. It is possible that once in a while you might get a
+picture that is in no way feline related. In such cases, just try again.
 
 Currently, the images are collected from the following sources-
 \enumerate{
@@ -42,26 +43,25 @@ Currently, the images are collected from the following sources-
 }
 
 The sound files come from the following CC BY 3.0 source:
-\url{https://soundbible.com/suggest.php?q=cat+meow&x=0&y=0}
+\url{https://soundbible.com/}
 }
 \examples{
 \donttest{
+library(kittyR)
+
 # relying on default collection
 set.seed(122)
-kittyR::kittyR(meow = FALSE)
+kittyR(meow = FALSE)
 
 # in case you want only pics of kittens
 set.seed(111)
-kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+kittyR(meow = FALSE, only_kitten = TRUE)
 
 # provide a custom URL
 set.seed(300)
-kittyR::kittyR(
+kittyR(
   url = "https://unsplash.com/s/photos/cat/",
   meow = FALSE
 )
 }
-}
-\author{
-\href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
 }

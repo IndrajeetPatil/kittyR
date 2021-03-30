@@ -1,4 +1,4 @@
-#' @title Prepare a dataframe with URLs for cat pics.
+#' @title Prepare a dataframe with URLs for cat pictures.
 #' @name kitty_pics_df
 #'
 #' @description

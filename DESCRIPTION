@@ -1,7 +1,7 @@
 Type: Package
 Package: kittyR
 Title: Kitty Pictures and Meows from R Console
-Version: 1.0.0.9000
+Version: 1.1.0
 Authors@R: 
     person(given = "Indrajeet",
            family = "Patil",
@@ -23,7 +23,7 @@ Imports:
     imager,
     magrittr,
     purrr,
-    rvest,
+    rvest (>= 1.0.0),
     stringr,
     tibble
 Suggests: 
@@ -31,7 +31,6 @@ Suggests:
     testthat
 Encoding: UTF-8
 Language: en-US
-LazyData: true
 Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace", "collate", "pkgapi::api_roclet"))
 RoxygenNote: 7.1.1.9001
 Config/testthat/edition: 3

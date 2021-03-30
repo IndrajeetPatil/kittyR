@@ -62,7 +62,7 @@ In case you want a picture of a kitty:
 
 ```{r kittyR1}
 # to always have the same kitty on README
-set.seed(123)
+set.seed(55)
 
 # show me the kitty NOW!
 kittyR::kittyR()

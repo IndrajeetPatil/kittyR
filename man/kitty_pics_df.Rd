@@ -2,7 +2,7 @@
 % Please edit documentation in R/kittypics_df_maker.R
 \name{kitty_pics_df}
 \alias{kitty_pics_df}
-\title{Prepare a dataframe with URLs for cat pics.}
+\title{Prepare a dataframe with URLs for cat pictures.}
 \usage{
 kitty_pics_df(url, ...)
 }
