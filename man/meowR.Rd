@@ -16,8 +16,6 @@ included. The default is \code{3}.}
 No return value, called for side effect (sound).
 }
 \description{
-\Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
-
 \code{meowR} is inspired by \code{beepr::beep}, which plays a short sound to notify
 you, for example, when a script has finished. Instead of a beep, this
 function produced a meow.

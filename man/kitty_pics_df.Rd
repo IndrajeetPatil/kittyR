@@ -16,8 +16,6 @@ extracted.}
 A tibble containing extracted details from the provided URL.
 }
 \description{
-\Sexpr[results=rd, stage=render]{rlang:::lifecycle("maturing")}
-
 Mostly useful for internal workings of this package, this function extracts
 images at given URL and returns it in a dataframe.
 }

@@ -5,8 +5,6 @@
 #'
 #' @description
 #'
-#' \Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
-#'
 #' This function displays a picture of a cat and plays a short sound clip
 #' containing cat meow. It is possible that once in a while you might get a
 #' picture that is in no way feline related. In such cases, just try again.

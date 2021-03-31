@@ -4,8 +4,6 @@
 #'
 #' @description
 #'
-#' \Sexpr[results=rd, stage=render]{rlang:::lifecycle("stable")}
-#'
 #' `meowR` is inspired by `beepr::beep`, which plays a short sound to notify
 #' you, for example, when a script has finished. Instead of a beep, this
 #' function produced a meow.
