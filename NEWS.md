@@ -1,3 +1,5 @@
+# kittyR 1.1.0.9000
+
 # kittyR 1.1.0
 
 - Gets rid of the `NOTE` related to `LazyData` in `R CMD CHECK`.

@@ -16,7 +16,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.0.4 (2021-02-15)",
+  "runtimePlatform": "R version 4.0.5 (2021-03-31)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -177,7 +177,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "6051.501KB",
+  "fileSize": "6045.46KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
   "developmentStatus": ["https://lifecycle.r-lib.org/articles/stages.html", "https://www.repostatus.org/#active"],
   "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md",
@@ -192,6 +192,6 @@
     }
   ],
   "funder": {},
-  "relatedLink": "https://CRAN.R-project.org/package=kittyR",
+  "relatedLink": ["https://CRAN.R-project.org/package=kittyR", "https://indrajeetpatil.github.io/kittyR/"],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md"
 }

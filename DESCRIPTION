@@ -1,7 +1,7 @@
 Type: Package
 Package: kittyR
 Title: Kitty Pictures and Meows from R Console
-Version: 1.1.0
+Version: 1.1.0.9000
 Authors@R: 
     person(given = "Indrajeet",
            family = "Patil",
@@ -12,7 +12,7 @@ Maintainer: Indrajeet Patil <patilindrajeet.science@gmail.com>
 Description: Get pictures of cats and their meows from your R
     console.
 License: MIT + file LICENSE
-URL: https://github.com/IndrajeetPatil/kittyR
+URL: https://indrajeetpatil.github.io/kittyR/, https://github.com/IndrajeetPatil/kittyR
 BugReports: https://github.com/IndrajeetPatil/kittyR/issues
 Depends: 
     R (>= 3.6.0)

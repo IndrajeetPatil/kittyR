@@ -26,6 +26,3 @@ function produced a meow.
 kittyR::meowR(sound = 4)
 }
 }
-\author{
-\href{https://github.com/IndrajeetPatil/}{Indrajeet Patil}
-}
