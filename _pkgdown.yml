@@ -1,11 +1,7 @@
 url: https://indrajeetpatil.github.io/kittyR/
 
 template:
-  params:
-    ganalytics: UA-87348339-3
-
-development:
-  mode: unreleased
+  package: preferably
 
 authors:
   Indrajeet Patil:

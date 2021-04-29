@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 [![CRAN Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html)
 [![Travis Build Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR) 
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
+[![pkgdown](https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg)](https://github.com/IndrajeetPatil/kittyR/actions)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Project Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master) 
@@ -62,7 +63,7 @@ In case you want a picture of a kitty:
 
 ```{r kittyR1}
 # to always have the same kitty on README
-set.seed(55)
+set.seed(20)
 
 # show me the kitty NOW!
 kittyR::kittyR()
@@ -73,7 +74,7 @@ etc.). If you want only kittens, you can use an additional argument.
 
 ```{r kittyR2}
 # to always have the same kitty on README
-set.seed(14)
+set.seed(144)
 
 # show me the kitten NOW!
 kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
