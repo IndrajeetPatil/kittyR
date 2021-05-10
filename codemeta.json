@@ -10,7 +10,7 @@
   "codeRepository": "https://github.com/IndrajeetPatil/kittyR",
   "issueTracker": "https://github.com/IndrajeetPatil/kittyR/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "1.1.0",
+  "version": "1.1.0.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -90,6 +90,7 @@
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
+      "version": ">= 1.0.5",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -119,6 +120,7 @@
       "@type": "SoftwareApplication",
       "identifier": "magrittr",
       "name": "magrittr",
+      "version": ">= 2.0.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -177,7 +179,7 @@
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     }
   ],
-  "fileSize": "6045.46KB",
+  "fileSize": "5956.88KB",
   "contIntegration": ["https://travis-ci.org/IndrajeetPatil/kittyR", "https://ci.appveyor.com/project/IndrajeetPatil/kittyR"],
   "developmentStatus": ["https://lifecycle.r-lib.org/articles/stages.html", "https://www.repostatus.org/#active"],
   "releaseNotes": "https://github.com/IndrajeetPatil/kittyR/blob/master/NEWS.md",
@@ -192,6 +194,9 @@
     }
   ],
   "funder": {},
-  "relatedLink": ["https://CRAN.R-project.org/package=kittyR", "https://indrajeetpatil.github.io/kittyR/"],
+  "relatedLink": [
+    "https://CRAN.R-project.org/package=kittyR",
+    "https://indrajeetpatil.github.io/kittyR/"
+  ],
   "readme": "https://github.com/IndrajeetPatil/kittyR/blob/master/README.md"
 }

@@ -18,10 +18,10 @@ Depends:
     R (>= 3.6.0)
 Imports:
     beepr,
-    dplyr,
+    dplyr (>= 1.0.5),
     graphics,
     imager,
-    magrittr,
+    magrittr (>= 2.0.1),
     purrr,
     rvest (>= 1.0.0),
     stringr,
