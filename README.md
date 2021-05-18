@@ -4,49 +4,43 @@
 # kittyR: Kitty pictures and meows from R console
 
 [![CRAN\_Release\_Badge](https://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
-[![CRAN
-Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html)
 [![Travis Build
 Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&svg=true)](https://ci.appveyor.com/project/IndrajeetPatil/kittyR)
 [![pkgdown](https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg)](https://github.com/IndrajeetPatil/kittyR/actions)
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
-[![Project
-Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--05--10-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)
-[![GitHub code size in
-bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Total downloads
 badge](https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue)](https://CRAN.R-project.org/package=kittyR)
 
-# Raison d’être <img src="man/figures/logo.png" align="right" width="360" />
+<!-- [![Project Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
+<!-- [![Last-changedate](https://img.shields.io/badge/last%20change-2021--05--18-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)  -->
+<!-- [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR) -->
+<!-- [![CRAN Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html) -->
+
+# Raison d’être <img src="man/figures/logo.png" align="right" width="240" />
 
 This package is designed for rainy days when your results are
 heartbreaking or when no matter what you try, you can’t seem to get rid
 of that bug. Take a respite from those negative thoughts by accessing
-kitty pics **and** their adorable meows right from your R console 😻 and
-then get back to work again!
+kitty pictures **and** their adorable meows right from your R console 😻
+and then get back to work again.
+
+May these kitties bring some joy and amusement during your stressful
+data digging jobs!
 
 # Installation
 
-When available on `CRAN`, you can download it by running:
-
-``` r
-install.packages("kittyR")
-```
-
-You can get the development version from [GitHub](https://github.com/)
-with:
-
-``` r
-# install.packages("remotes")
-remotes::install_github("IndrajeetPatil/kittyR")
-```
+| Type        | Source | Command                                            |
+|-------------|--------|----------------------------------------------------|
+| Release     | CRAN   | `install.packages("kittyR")`                       |
+| Development | GitHub | `remotes::install_github("IndrajeetPatil/kittyR")` |
 
 # Functions
 
 There are only two available functions in this package-
+
+## `kittyR()`
 
 In case you want a picture of a kitty:
 
@@ -82,6 +76,8 @@ freely available images:
 -   <https://unsplash.com/s/photos/kitten/>
 -   <https://www.reshot.com/search/kitten/>
 
+## `meowR()`
+
 In case you just want to hear a meow either *apropos* nothing or at the
 end of execution of some code to let you know that the execution is
 complete, just include this line of code:
@@ -97,14 +93,11 @@ If you have a kitty meow that you like and would like to include in the
 package, please either make a PR or e-mail it to me and I will include
 it.
 
+# Acknowledgments
+
 This package was inspired by
 [pupR](https://github.com/melissanjohnson/pupR) package by Melissa
 Innerst.
-
-May these kitties bring some joy and amusement during your stressful
-data digging jobs!
-
-# Acknowledgments
 
 The hexsticker was generously designed by Sarah Otterstetter (Max Planck
 Institute for Human Development, Berlin).
