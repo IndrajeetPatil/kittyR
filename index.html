@@ -104,30 +104,51 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#kittyr-kitty-pictures-and-meows-from-r-console" class="anchor"></a>kittyR: Kitty pictures and meows from R console</h1></div>
 
+<!-- [![Project Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
+<!-- [![Last-changedate](https://img.shields.io/badge/last%20change-2021--05--18-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)  -->
+<!-- [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR) -->
+<!-- [![CRAN Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html) -->
 </div>
 <div id="raison-dêtre-" class="section level1">
 <h1 class="hasAnchor">
-<a href="#raison-d%C3%AAtre-" class="anchor"></a>Raison d’être <img src="reference/figures/logo.png" align="right" width="360">
+<a href="#raison-d%C3%AAtre-" class="anchor"></a>Raison d’être <img src="reference/figures/logo.png" align="right" width="240">
 </h1>
-<p>This package is designed for rainy days when your results are heartbreaking or when no matter what you try, you can’t seem to get rid of that bug. Take a respite from those negative thoughts by accessing kitty pics <strong>and</strong> their adorable meows right from your R console 😻 and then get back to work again!</p>
+<p>This package is designed for rainy days when your results are heartbreaking or when no matter what you try, you can’t seem to get rid of that bug. Take a respite from those negative thoughts by accessing kitty pictures <strong>and</strong> their adorable meows right from your R console 😻 and then get back to work again.</p>
+<p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
 </div>
 <div id="installation" class="section level1">
 <h1 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h1>
-<p>When available on <code>CRAN</code>, you can download it by running:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"kittyR"</span><span class="op">)</span></code></pre></div>
-<p>You can get the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"IndrajeetPatil/kittyR"</span><span class="op">)</span></code></pre></div>
+<table class="table">
+<thead><tr class="header">
+<th>Type</th>
+<th>Source</th>
+<th>Command</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Release</td>
+<td>CRAN</td>
+<td><code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("kittyR")</a></code></td>
+</tr>
+<tr class="even">
+<td>Development</td>
+<td>GitHub</td>
+<td><code><a href="https://remotes.r-lib.org/reference/install_github.html">remotes::install_github("IndrajeetPatil/kittyR")</a></code></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="functions" class="section level1">
 <h1 class="hasAnchor">
 <a href="#functions" class="anchor"></a>Functions</h1>
 <p>There are only two available functions in this package-</p>
+<div id="kittyr" class="section level2">
+<h2 class="hasAnchor">
+<a href="#kittyr" class="anchor"></a><code>kittyR()</code>
+</h2>
 <p>In case you want a picture of a kitty:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># to always have the same kitty on README</span>
 <span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span>
 
@@ -135,7 +156,7 @@
 <span class="fu">kittyR</span><span class="fu">::</span><span class="fu"><a href="reference/kittyR.html">kittyR</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-kittyR1-1.png" width="100%"></p>
 <p>By default, the collection will include any kind of cat (big, small, wild, etc.). If you want only kittens, you can use an additional argument.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># to always have the same kitty on README</span>
 <span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">144</span><span class="op">)</span>
 
@@ -149,19 +170,24 @@
 <li><a href="https://unsplash.com/s/photos/kitten/" class="uri">https://unsplash.com/s/photos/kitten/</a></li>
 <li><a href="https://www.reshot.com/search/kitten/" class="uri">https://www.reshot.com/search/kitten/</a></li>
 </ul>
+</div>
+<div id="meowr" class="section level2">
+<h2 class="hasAnchor">
+<a href="#meowr" class="anchor"></a><code>meowR()</code>
+</h2>
 <p>In case you just want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code to let you know that the execution is complete, just include this line of code:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># can't print the sound, so</span>
 <span class="co"># meow meow meow</span>
 <span class="co"># you can choose from a sample of sounds included in the package</span>
 <span class="fu">kittyR</span><span class="fu">::</span><span class="fu"><a href="reference/meowR.html">meowR</a></span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></code></pre></div>
 <p>If you have a kitty meow that you like and would like to include in the package, please either make a PR or e-mail it to me and I will include it.</p>
-<p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR">pupR</a> package by Melissa Innerst.</p>
-<p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
+</div>
 </div>
 <div id="acknowledgments" class="section level1">
 <h1 class="hasAnchor">
 <a href="#acknowledgments" class="anchor"></a>Acknowledgments</h1>
+<p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR">pupR</a> package by Melissa Innerst.</p>
 <p>The hexsticker was generously designed by Sarah Otterstetter (Max Planck Institute for Human Development, Berlin).</p>
 </div>
 <div id="code-of-conduct" class="section level1">
@@ -211,14 +237,10 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://CRAN.R-project.org/package=kittyR"><img src="https://www.r-pkg.org/badges/version-ago/kittyR" alt="CRAN_Release_Badge"></a></li>
-<li><a href="https://cran.r-project.org/web/checks/check_results_kittyR.html"><img src="https://cranchecks.info/badges/summary/kittyR" alt="CRAN Checks"></a></li>
 <li><a href="https://travis-ci.org/IndrajeetPatil/kittyR"><img src="https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master" alt="Travis Build Status"></a></li>
 <li><a href="https://ci.appveyor.com/project/IndrajeetPatil/kittyR"><img src="https://ci.appveyor.com/api/projects/status/github/IndrajeetPatil/kittyR?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://github.com/IndrajeetPatil/kittyR/actions"><img src="https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg" alt="pkgdown"></a></li>
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
-<li><a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" alt="Project Status"></a></li>
-<li><a href="https://github.com/IndrajeetPatil/kittyR/commits/master"><img src="https://img.shields.io/badge/last%20change-2021--05--10-yellowgreen.svg" alt="Last-changedate"></a></li>
-<li><a href="https://github.com/IndrajeetPatil/kittyR"><img src="https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg" alt="GitHub code size in bytes"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle"></a></li>
 <li><a href="https://CRAN.R-project.org/package=kittyR"><img src="https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue" alt="Total downloads badge"></a></li>
 </ul>
 </div>
