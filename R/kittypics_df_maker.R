@@ -24,8 +24,7 @@
 # function body
 kitty_pics_df <- function(url, ...) {
   # getting all cat images from webpage of interest
-  kitties <-
-    rvest::session(url) %>%
+  kitties <- rvest::session(url) %>%
     rvest::html_nodes(css = "img")
 
   # exclusion pattern
@@ -33,15 +32,13 @@ kitty_pics_df <- function(url, ...) {
     "logo|static|users|avatar|profile|gif|scorecardresearch|facebook|trkn|svg|build|file-"
 
   # getting static images
-  df_static <-
-    kitties %>%
+  df_static <- kitties %>%
     rvest::html_attr(name = "src") %>%
     tibble::enframe(name = "id", value = "url") %>%
     dplyr::filter(!stringr::str_detect(url, exclude_str_pattern))
 
   # getting images with two source files (but retaining only the 480 pixel ones)
-  df_srcset <-
-    kitties %>%
+  df_srcset <- kitties %>%
     rvest::html_attr(name = "data-lazy-srcset") %>%
     stringr::str_split(string = ., pattern = ",", simplify = FALSE) %>%
     purrr::map(

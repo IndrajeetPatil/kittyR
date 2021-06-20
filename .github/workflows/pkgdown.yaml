@@ -16,7 +16,7 @@ jobs:
 
       - uses: r-lib/actions/setup-r@master
 
-      - uses: r-lib/actions/setup-pandoc@master
+      - uses: IndrajeetPatil/actions/setup-pandoc@master
 
       # this is here because of an issue installing the imager package
       - name: Install XQuartz on macOS

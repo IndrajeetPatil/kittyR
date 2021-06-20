@@ -40,19 +40,18 @@ meowR <- function(sound = 3) {
   }
 
   # a vector of cat sounds
-  sounds <-
-    c(
-      Tom = "1.wav",
-      Toops = "2.wav",
-      Eno = "3.wav",
-      Pari = "4.wav",
-      Cicci = "5.wav",
-      Titti = "6.wav"
-    )
-
-  # giving the sound path
-  sound_path <- system.file(paste0("sounds/", sounds[sound]), package = "kittyR")
+  sounds <- c(
+    Tom = "1.wav",
+    Toops = "2.wav",
+    Eno = "3.wav",
+    Pari = "4.wav",
+    Cicci = "5.wav",
+    Titti = "6.wav"
+  )
 
   # producing the sound
-  beepr::beep(sound = sound_path, expr = NULL)
+  beepr::beep(
+    sound = system.file(paste0("sounds/", sounds[sound]), package = "kittyR"),
+    expr = NULL
+  )
 }

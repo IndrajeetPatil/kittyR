@@ -84,12 +84,11 @@ kittyR <- function(url = NULL,
     }
 
     # getting the dataframe with image URLs
-    df_combined <-
-      purrr::pmap_dfr(
-        .l = url_list,
-        .f = kittyR::kitty_pics_df,
-        .id = "source"
-      )
+    df_combined <- purrr::pmap_dfr(
+      .l = url_list,
+      .f = kittyR::kitty_pics_df,
+      .id = "source"
+    )
   } else {
     df_combined <- kitty_pics_df(url)
   }
