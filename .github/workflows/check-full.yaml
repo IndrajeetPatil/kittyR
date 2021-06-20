@@ -23,12 +23,11 @@ jobs:
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
 
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         config:
           #- {os: windows-latest, r: 'devel', args: "--no-manual"}
           - {os: windows-latest, r: 'release', args: "--no-manual"}
-          - {os: windows-latest, r: 'devel', args: "--no-manual"}
           - {os: windows-latest, r: 'oldrel', args: "--no-manual"}
           - {os: windows-latest, r: '3.6.0', args: "--no-manual"}
           #- {os: macOS-latest, r: 'devel', args: "--no-manual"}
