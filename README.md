@@ -3,18 +3,10 @@
 
 # kittyR: Kitty pictures and meows from R console
 
-[![CRAN\_Release\_Badge](https://www.r-pkg.org/badges/version-ago/kittyR)](https://CRAN.R-project.org/package=kittyR)
-[![Travis Build
-Status](https://travis-ci.org/IndrajeetPatil/kittyR.svg?branch=master)](https://travis-ci.org/IndrajeetPatil/kittyR)
+[![lifecycle](https://img.shields.io/badge/lifecycle-retired-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+[![R build
+status](https://github.com/IndrajeetPatil/kittyR/workflows/R-CMD-check/badge.svg)](https://github.com/IndrajeetPatil/kittyR)
 [![pkgdown](https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg)](https://github.com/IndrajeetPatil/kittyR/actions)
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
-[![Total downloads
-badge](https://cranlogs.r-pkg.org/badges/grand-total/kittyR?color=blue)](https://CRAN.R-project.org/package=kittyR)
-
-<!-- [![Project Status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) -->
-<!-- [![Last-changedate](https://img.shields.io/badge/last%20change-2021--06--20-yellowgreen.svg)](https://github.com/IndrajeetPatil/kittyR/commits/master)  -->
-<!-- [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/IndrajeetPatil/kittyR.svg)](https://github.com/IndrajeetPatil/kittyR) -->
-<!-- [![CRAN Checks](https://cranchecks.info/badges/summary/kittyR)](https://cran.r-project.org/web/checks/check_results_kittyR.html) -->
 
 # Raison d’être <img src="man/figures/logo.png" align="right" width="240" />
 

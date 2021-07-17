@@ -1,4 +1,6 @@
-# kittyR 1.1.0.9000
+# kittyR 1.1.1
+
+- Archived on CRAN.
 
 # kittyR 1.1.0
 
