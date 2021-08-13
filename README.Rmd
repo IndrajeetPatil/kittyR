@@ -34,14 +34,15 @@ digging jobs!
 
 # Installation
 
+The package is only available on `GitHub`:
+
 Type | Source | Command
 ---|---|---
-Release | CRAN | `install.packages("kittyR")`
 Development | GitHub | `remotes::install_github("IndrajeetPatil/kittyR")`
 
 # Functions
 
-There are only two available functions in this package-
+There are only two functions in this package-
 
 ## `kittyR()`
 
