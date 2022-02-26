@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://indrajeetpatil.github.io/kittyR//index.html</loc>
+    <loc>https://indrajeetpatil.github.io/kittyR/404.html</loc>
   </url>
   <url>
-    <loc>https://indrajeetpatil.github.io/kittyR//reference/kittyR.html</loc>
+    <loc>https://indrajeetpatil.github.io/kittyR/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://indrajeetpatil.github.io/kittyR//reference/kitty_pics_df.html</loc>
+    <loc>https://indrajeetpatil.github.io/kittyR/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>https://indrajeetpatil.github.io/kittyR//reference/meowR.html</loc>
+    <loc>https://indrajeetpatil.github.io/kittyR/ISSUE_TEMPLATE.html</loc>
   </url>
   <url>
-    <loc>https://indrajeetpatil.github.io/kittyR//reference/reexports.html</loc>
+    <loc>https://indrajeetpatil.github.io/kittyR/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/SECURITY.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/SUPPORT.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/index.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/reference/kittyR.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/reference/kitty_pics_df.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/reference/meowR.html</loc>
+  </url>
+  <url>
+    <loc>https://indrajeetpatil.github.io/kittyR/reference/reexports.html</loc>
   </url>
 </urlset>

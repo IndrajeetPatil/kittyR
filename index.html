@@ -4,37 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Inform modern browsers that this page supports both dark and light color schemes,
-  and the page author prefers light. --><meta name="color-scheme" content="dark light">
-<script>
-  // If `prefers-color-scheme` is not supported, fall back to light mode.
-  // i.e. In this case, inject the `light` CSS before the others, with
-  // no media filter so that it will be downloaded with highest priority.
-  if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
-    document.documentElement.style.display = "none";
-    document.head.insertAdjacentHTML(
-      "beforeend",
-      "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
-    );
-  }
-</script><title>Kitty Pictures and Meows from R Console • kittyR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Get pictures of cats and their meows from your R
+    console.">
+<title>Kitty Pictures and Meows from R Console • kittyR</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- Flatly Theme - Light  --><link id="css-light" rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-<!-- Darkly Theme - Dark --><link id="css-dark" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="(prefers-color-scheme: dark)">
-<!-- preferably CSS --><link rel="stylesheet" href="preferably.css">
-<link id="css-code-light" rel="stylesheet" href="code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-<link id="css-code-dark" rel="stylesheet" href="code-color-scheme-dark.css" media="(prefers-color-scheme: dark)">
-<!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="Kitty Pictures and Meows from R Console">
 <meta property="og:description" content="Get pictures of cats and their meows from your R
     console.">
@@ -44,79 +28,77 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">kittyR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.1</span>
-      </span>
-    </div>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+    
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="index.html">kittyR</a>
+
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.1</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="reference/index.html">Reference</a>
-</li>
-<li>
-  <a href="news/index.html">Changelog</a>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/IndrajeetPatil/kittyR/">
-    <span class="fab fa-github fa-lg"></span>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/IndrajeetPatil/kittyR/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
-        
-        
-
-
       </ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
-</div>
-<!--/.navbar -->
-
-      
-
-      </header><div class="row">
-  <div class="contents col-md-9">
-
-<div id="kittyr-kitty-pictures-and-meows-from-r-console" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#kittyr-kitty-pictures-and-meows-from-r-console" class="anchor"></a>kittyR: Kitty pictures and meows from R console</h1></div>
-
-</div>
-<div id="raison-dêtre-" class="section level1">
-<h1 class="hasAnchor">
-<a href="#raison-d%C3%AAtre-" class="anchor"></a>Raison d’être <img src="reference/figures/logo.png" align="right" width="240">
+</nav><div class="container template-home">
+<div class="row">
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="kittyr-kitty-pictures-and-meows-from-r-console">kittyR: Kitty pictures and meows from R console<a class="anchor" aria-label="anchor" href="#kittyr-kitty-pictures-and-meows-from-r-console"></a>
 </h1>
-<p>This package is designed for rainy days when your results are heartbreaking or when no matter what you try, you can’t seem to get rid of that bug. Take a respite from those negative thoughts by accessing kitty pictures <strong>and</strong> their adorable meows right from your R console 😻 and then get back to work again.</p>
-<p>May these kitties bring some joy and amusement during your stressful data digging jobs!</p>
 </div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
+
+</div>
+<div class="section level1">
+<h1 id="raison-dêtre-">Raison d’être
+<a class="anchor" aria-label="anchor" href="#raison-d%C3%AAtre-"></a>
+</h1>
+<p>This package is designed for rainy days when your results are
+heartbreaking or when no matter what you try, you can’t seem to get rid
+of that bug. Take a respite from those negative thoughts by accessing
+kitty pictures <strong>and</strong> their adorable meows right from your
+R console 😻 and then get back to work again.</p>
+<p>May these kitties bring some joy and amusement during your stressful
+data digging jobs!</p>
+</div>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
 <p>The package is only available on <code>GitHub</code>:</p>
 <table class="table">
+<colgroup>
+<col width="17%">
+<col width="10%">
+<col width="71%">
+</colgroup>
 <thead><tr class="header">
 <th>Type</th>
 <th>Source</th>
@@ -125,129 +107,152 @@
 <tbody><tr class="odd">
 <td>Development</td>
 <td>GitHub</td>
-<td><code><a href="https://remotes.r-lib.org/reference/install_github.html">remotes::install_github("IndrajeetPatil/kittyR")</a></code></td>
+<td><code>remotes::install_github("IndrajeetPatil/kittyR")</code></td>
 </tr></tbody>
 </table>
 </div>
-<div id="functions" class="section level1">
-<h1 class="hasAnchor">
-<a href="#functions" class="anchor"></a>Functions</h1>
+<div class="section level1">
+<h1 id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a>
+</h1>
 <p>There are only two functions in this package-</p>
-<div id="kittyr" class="section level2">
-<h2 class="hasAnchor">
-<a href="#kittyr" class="anchor"></a><code>kittyR()</code>
+<div class="section level2">
+<h2 id="kittyr">
+<code>kittyR()</code><a class="anchor" aria-label="anchor" href="#kittyr"></a>
 </h2>
 <p>In case you want a picture of a kitty:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># to always have the same kitty on README</span>
-<span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span>
 
 <span class="co"># show me the kitty NOW!</span>
 <span class="fu">kittyR</span><span class="fu">::</span><span class="fu"><a href="reference/kittyR.html">kittyR</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-kittyR1-1.png" width="100%"></p>
-<p>By default, the collection will include any kind of cat (big, small, wild, etc.). If you want only kittens, you can use an additional argument.</p>
+<p>By default, the collection will include any kind of cat (big, small,
+wild, etc.). If you want only kittens, you can use an additional
+argument.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># to always have the same kitty on README</span>
-<span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">144</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">144</span><span class="op">)</span>
 
 <span class="co"># show me the kitten NOW!</span>
 <span class="fu">kittyR</span><span class="fu">::</span><span class="fu"><a href="reference/kittyR.html">kittyR</a></span><span class="op">(</span>meow <span class="op">=</span> <span class="cn">FALSE</span>, only_kitten <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-kittyR2-1.png" width="100%"></p>
-<p>The collection of cat pictures comes from the following collections of freely available images:</p>
+<p>The collection of cat pictures comes from the following collections
+of freely available images:</p>
 <ul>
-<li><a href="https://unsplash.com/s/photos/cat/" class="uri">https://unsplash.com/s/photos/cat/</a></li>
-<li><a href="https://www.reshot.com/search/cat/" class="uri">https://www.reshot.com/search/cat/</a></li>
-<li><a href="https://unsplash.com/s/photos/kitten/" class="uri">https://unsplash.com/s/photos/kitten/</a></li>
-<li><a href="https://www.reshot.com/search/kitten/" class="uri">https://www.reshot.com/search/kitten/</a></li>
+<li><a href="https://unsplash.com/s/photos/cat/" class="external-link uri">https://unsplash.com/s/photos/cat/</a></li>
+<li><a href="https://www.reshot.com/search/cat/" class="external-link uri">https://www.reshot.com/search/cat/</a></li>
+<li><a href="https://unsplash.com/s/photos/kitten/" class="external-link uri">https://unsplash.com/s/photos/kitten/</a></li>
+<li><a href="https://www.reshot.com/search/kitten/" class="external-link uri">https://www.reshot.com/search/kitten/</a></li>
 </ul>
 </div>
-<div id="meowr" class="section level2">
-<h2 class="hasAnchor">
-<a href="#meowr" class="anchor"></a><code>meowR()</code>
+<div class="section level2">
+<h2 id="meowr">
+<code>meowR()</code><a class="anchor" aria-label="anchor" href="#meowr"></a>
 </h2>
-<p>In case you just want to hear a meow either <em>apropos</em> nothing or at the end of execution of some code to let you know that the execution is complete, just include this line of code:</p>
+<p>In case you just want to hear a meow either <em>apropos</em> nothing
+or at the end of execution of some code to let you know that the
+execution is complete, just include this line of code:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># can't print the sound, so</span>
 <span class="co"># meow meow meow</span>
 <span class="co"># you can choose from a sample of sounds included in the package</span>
 <span class="fu">kittyR</span><span class="fu">::</span><span class="fu"><a href="reference/meowR.html">meowR</a></span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></code></pre></div>
-<p>If you have a kitty meow that you like and would like to include in the package, please either make a PR or e-mail it to me and I will include it.</p>
+<p>If you have a kitty meow that you like and would like to include in
+the package, please either make a PR or e-mail it to me and I will
+include it.</p>
 </div>
 </div>
-<div id="acknowledgments" class="section level1">
-<h1 class="hasAnchor">
-<a href="#acknowledgments" class="anchor"></a>Acknowledgments</h1>
-<p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR">pupR</a> package by Melissa Innerst.</p>
-<p>The hexsticker was generously designed by Sarah Otterstetter (Max Planck Institute for Human Development, Berlin).</p>
+<div class="section level1">
+<h1 id="acknowledgments">Acknowledgments<a class="anchor" aria-label="anchor" href="#acknowledgments"></a>
+</h1>
+<p>This package was inspired by <a href="https://github.com/melissanjohnson/pupR" class="external-link">pupR</a> package by
+Melissa Innerst.</p>
+<p>The hexsticker was generously designed by Sarah Otterstetter (Max
+Planck Institute for Human Development, Berlin).</p>
 </div>
-<div id="code-of-conduct" class="section level1">
-<h1 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h1>
-<p>Please note that the <code>kittyR</code> project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<div class="section level1">
+<h1 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
+</h1>
+<p>Please note that the <code>kittyR</code> project is released with a
+<a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor
+Code of Conduct</a>. By contributing to this project, you agree to abide
+by its terms.</p>
 </div>
 
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
-<h2>Links</h2>
+  </main><aside class="col-md-3"><div class="links">
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=kittyR">https://​cloud.r-project.org/​package=kittyR</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/IndrajeetPatil/kittyR/">https://​github.com/​IndrajeetPatil/​kittyR/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/IndrajeetPatil/kittyR/issues">https://​github.com/​IndrajeetPatil/​kittyR/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=kittyR" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/IndrajeetPatil/kittyR/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/IndrajeetPatil/kittyR/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
 <div class="community">
-<h2>Community</h2>
+<h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
 <li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing kittyR</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a> <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0003-1995-6531" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> <br><small>(@patilindrajeets)</small>
-</li>
+<a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a> <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0003-1995-6531" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="https://img.shields.io/badge/lifecycle-retired-orange.svg" alt="lifecycle"></a></li>
-<li><a href="https://github.com/IndrajeetPatil/kittyR"><img src="https://github.com/IndrajeetPatil/kittyR/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="https://github.com/IndrajeetPatil/kittyR/actions"><img src="https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg" alt="pkgdown"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html" class="external-link"><img src="https://img.shields.io/badge/lifecycle-retired-orange.svg" alt="lifecycle"></a></li>
+<li><a href="https://github.com/IndrajeetPatil/kittyR" class="external-link"><img src="https://github.com/IndrajeetPatil/kittyR/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://github.com/IndrajeetPatil/kittyR/actions" class="external-link"><img src="https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg" alt="pkgdown"></a></li>
 </ul>
 </div>
-</div>
-</div>
 
-
-      <footer><div class="copyright">
-  <p>Developed by <a href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a>.</p>
+  </aside>
 </div>
 
-<div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1, using <a href="https://preferably.amirmasoudabdol.name/?source=footer">preferably</a> template.</p>
+
+    <footer><div class="pkgdown-footer-left">
+  <p></p>
+<p>Developed by
+<a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet
+Patil</a>.</p>
 </div>
 
-      </footer>
+<div class="pkgdown-footer-right">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a>
+2.0.2.9000.</p>
+</div>
+
+    </footer>
 </div>
 
   
 
+  
 
   </body>
 </html>
