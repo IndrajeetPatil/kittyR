@@ -18,12 +18,12 @@ Depends:
     R (>= 3.6.0)
 Imports:
     beepr,
-    dplyr (>= 1.0.5),
+    dplyr,
     graphics,
     imager,
-    magrittr (>= 2.0.1),
+    magrittr,
     purrr,
-    rvest (>= 1.0.0),
+    rvest,
     stringr,
     tibble
 Suggests: 
