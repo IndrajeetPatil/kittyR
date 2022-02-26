@@ -1,7 +1,7 @@
 url: https://indrajeetpatil.github.io/kittyR/
 
 template:
-  package: preferably
+  bootstrap: 5
 
 authors:
   Indrajeet Patil:
