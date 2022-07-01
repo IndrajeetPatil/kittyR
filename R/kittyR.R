@@ -65,7 +65,6 @@ kittyR <- function(url = NULL,
                    sound = 3,
                    only_kitten = FALSE,
                    ...) {
-
   # if no url is provided
   if (is.null(url)) {
     # if only kitten pics are needed
