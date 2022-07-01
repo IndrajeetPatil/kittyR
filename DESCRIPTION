@@ -27,6 +27,7 @@ Imports:
     stringr,
     tibble
 Suggests: 
+    rmarkdown,
     spelling,
     testthat
 Encoding: UTF-8
