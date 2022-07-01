@@ -57,7 +57,7 @@ function produced a meow.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">meowR</span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">meowR</span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -67,20 +67,23 @@ function produced a meow.</p>
 played by either specifying one of the built in sounds, specifying the path
 to a <code>.wav</code> file or specifying an URL. There are currently 6 meows
 included. The default is <code>3</code>.</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>No return value, called for side effect (sound).</p>
+    
+
+<p>No return value, called for side effect (sound).</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># \donttest{</span></span>
-<span class="r-in"><span class="co"># play Eno's meow</span></span>
-<span class="r-in"><span class="fu">kittyR</span><span class="fu">::</span><span class="fu">meowR</span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
+<span class="r-in"><span><span class="co"># play Eno's meow</span></span></span>
+<span class="r-in"><span><span class="fu">kittyR</span><span class="fu">::</span><span class="fu">meowR</span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
@@ -92,7 +95,7 @@ included. The default is <code>3</code>.</p></dd>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.9000.</p>
 </div>
 
     </footer></div>
