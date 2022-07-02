@@ -26,8 +26,7 @@ knitr::opts_chunk$set(
 This package is designed for rainy days when your results are heartbreaking or
 when no matter what you try, you can't seem to get rid of that bug. Take a
 respite from those negative thoughts by accessing kitty pictures **and** their
-adorable meows right from your R console `r emo::ji("heart_eyes_cat")` and then
-get back to work again.
+adorable meows right from your R console 😻 and then get back to work again.
 
 May these kitties bring some joy and amusement during your stressful data
 digging jobs!
