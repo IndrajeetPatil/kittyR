@@ -2,7 +2,7 @@ pandoc: '2.18'
 pkgdown: 2.0.5.9000
 pkgdown_sha: b4096aa376773d7dee98a267fd0b5a025975a3dc
 articles: {}
-last_built: 2022-07-02T04:54Z
+last_built: 2022-07-02T05:22Z
 urls:
   reference: https://indrajeetpatil.github.io/kittyR/reference
   article: https://indrajeetpatil.github.io/kittyR/articles
