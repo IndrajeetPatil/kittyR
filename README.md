@@ -1,14 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# kittyR: Kitty pictures and meows from R console
+# kittyR: Kitty pictures and meows from R console <img src="man/figures/logo.png" align="right" width="240" />
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-retired-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![R build
 status](https://github.com/IndrajeetPatil/kittyR/workflows/R-CMD-check/badge.svg)](https://github.com/IndrajeetPatil/kittyR)
 [![pkgdown](https://github.com/IndrajeetPatil/kittyR/workflows/pkgdown/badge.svg)](https://github.com/IndrajeetPatil/kittyR/actions)
-
-# Raison d’être <img src="man/figures/logo.png" align="right" width="240" />
 
 This package is designed for rainy days when your results are
 heartbreaking or when no matter what you try, you can’t seem to get rid
@@ -17,11 +15,11 @@ kitty pictures **and** their adorable meows right from your R console 😻
 and then get back to work again.
 
 May these kitties bring some joy and amusement during your stressful
-data digging jobs!
+data cleaning jobs! 😊
 
 # Installation
 
-The package is only available on `GitHub`:
+The package is available only on `GitHub`:
 
 ``` r
 remotes::install_github("IndrajeetPatil/kittyR")

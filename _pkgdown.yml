@@ -2,6 +2,10 @@ url: https://indrajeetpatil.github.io/kittyR/
 
 template:
   bootstrap: 5
+  bslib:
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto Slab"}
+    code_font: {google: "JetBrains Mono"}
 
 authors:
   Indrajeet Patil:
