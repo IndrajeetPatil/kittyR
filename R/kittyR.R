@@ -10,17 +10,13 @@
 #' picture that is in no way feline related. In such cases, just try again.
 #'
 #' Currently, the images are collected from the following sources-
-#' \enumerate{
-#' \item \url{https://unsplash.com/s/photos/cat/}
-#' \item \url{https://www.reshot.com/search/cat/}
-#' \item \url{https://unsplash.com/s/photos/kitten/}
-#' \item \url{https://www.reshot.com/search/kitten/}
-#' }
+#' - <https://unsplash.com/s/photos/cat/>
+#' - <https://unsplash.com/s/photos/kitten/>
 #'
 #' The sound files come from the following CC BY 3.0 source:
-#' \url{https://soundbible.com/}
+#' <https://soundbible.com/>
 #'
-#' @param url URL for the source from which individual image URLs are to be
+#' @param url An URL for the source from which individual image URLs are to be
 #'   extracted. Default is `NULL`. If `NULL`, a randomly drawn image from the
 #'   default collection will be shown.
 #' @param meow Logical that decides whether to play a meow sound along with the
@@ -58,8 +54,6 @@
 #' )
 #' }
 #' @export
-
-# function body
 kittyR <- function(url = NULL,
                    meow = TRUE,
                    sound = 3,

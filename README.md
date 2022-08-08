@@ -23,9 +23,9 @@ data digging jobs!
 
 The package is only available on `GitHub`:
 
-| Type        | Source | Command                                            |
-|-------------|--------|----------------------------------------------------|
-| Development | GitHub | `remotes::install_github("IndrajeetPatil/kittyR")` |
+``` r
+remotes::install_github("IndrajeetPatil/kittyR")
+```
 
 # Functions
 
@@ -62,10 +62,8 @@ kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
 The collection of cat pictures comes from the following collections of
 freely available images:
 
--   <https://unsplash.com/s/photos/cat/>
--   <https://www.reshot.com/search/cat/>
--   <https://unsplash.com/s/photos/kitten/>
--   <https://www.reshot.com/search/kitten/>
+- <https://unsplash.com/s/photos/cat/>
+- <https://unsplash.com/s/photos/kitten/>
 
 ## `meowR()`
 

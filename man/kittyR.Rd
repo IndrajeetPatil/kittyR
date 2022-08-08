@@ -7,7 +7,7 @@
 kittyR(url = NULL, meow = TRUE, sound = 3, only_kitten = FALSE, ...)
 }
 \arguments{
-\item{url}{URL for the source from which individual image URLs are to be
+\item{url}{An URL for the source from which individual image URLs are to be
 extracted. Default is \code{NULL}. If \code{NULL}, a randomly drawn image from the
 default collection will be shown.}
 
@@ -33,11 +33,9 @@ containing cat meow. It is possible that once in a while you might get a
 picture that is in no way feline related. In such cases, just try again.
 
 Currently, the images are collected from the following sources-
-\enumerate{
+\itemize{
 \item \url{https://unsplash.com/s/photos/cat/}
-\item \url{https://www.reshot.com/search/cat/}
 \item \url{https://unsplash.com/s/photos/kitten/}
-\item \url{https://www.reshot.com/search/kitten/}
 }
 
 The sound files come from the following CC BY 3.0 source:
