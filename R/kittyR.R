@@ -64,22 +64,19 @@ kittyR <- function(url = NULL,
     # if only kitten pics are needed
     if (isTRUE(only_kitten)) {
       url_list <- list(url = tibble::lst(
-        "https://unsplash.com/s/photos/kitten/",
-        "https://www.reshot.com/search/kitten/"
+        "https://unsplash.com/s/photos/kitten/"
       ))
     } else {
       url_list <- list(url = tibble::lst(
         "https://unsplash.com/s/photos/cat/",
-        "https://www.reshot.com/search/cat/",
-        "https://unsplash.com/s/photos/kitten/",
-        "https://www.reshot.com/search/kitten/",
+        "https://unsplash.com/s/photos/kitten/"
       ))
     }
 
     # getting the dataframe with image URLs
     df_combined <- purrr::pmap_dfr(
-      .l = url_list,
-      .f = kittyR::kitty_pics_df,
+      .l  = url_list,
+      .f  = kittyR::kitty_pics_df,
       .id = "source"
     )
   } else {
@@ -91,9 +88,9 @@ kittyR <- function(url = NULL,
 
   # download a random image
   utils::download.file(
-    url = df_combined$url[sample(x = 1:length(df_combined$url), size = 1)],
+    url      = df_combined$url[sample(x = 1:length(df_combined$url), size = 1)],
     destfile = temporary_file_location,
-    mode = "wb"
+    mode     = "wb"
   )
 
   # bring the kitties to R

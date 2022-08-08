@@ -20,8 +20,6 @@
 #' set.seed(123)
 #' kittyR::kitty_pics_df("https://unsplash.com/s/photos/kitten/")
 #' @export
-
-# function body
 kitty_pics_df <- function(url, ...) {
   # getting all cat images from webpage of interest
   kitties <- rvest::session(url) %>%
