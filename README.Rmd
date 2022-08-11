@@ -97,7 +97,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>1</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/1.wav" type="audio/mpeg">
+               <source src="man/figures/1.wav" type="audio/wav">
+               <source src="reference/figures/1.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
@@ -105,7 +106,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>2</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/2.wav" type="audio/mpeg">
+               <source src="man/figures/2.wav" type="audio/wav">
+               <source src="reference/figures/2.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
@@ -113,7 +115,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>3</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/3.wav" type="audio/mpeg">
+               <source src="man/figures/3.wav" type="audio/wav">
+               <source src="reference/figures/3.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
@@ -121,7 +124,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>4</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/4.wav" type="audio/mpeg">
+               <source src="man/figures/4.wav" type="audio/wav">
+               <source src="reference/figures/4.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
@@ -129,7 +133,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>5</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/5.wav" type="audio/mpeg">
+               <source src="man/figures/5.wav" type="audio/wav">
+               <source src="reference/figures/5.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
@@ -137,7 +142,8 @@ To help you choose from the existing sounds, here is what all available meows so
          <td>6</td>
          <td>
             <audio controls="">
-               <source src="reference/figures/6.wav" type="audio/mpeg">
+               <source src="man/figures/6.wav" type="audio/wav">
+               <source src="reference/figures/6.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
