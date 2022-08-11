@@ -76,9 +76,83 @@ complete, just include this line of code:
 kittyR::meowR(sound = 4)
 ```
 
+To help you choose from the existing sounds, here is what all available
+meows sound like:
+
+<table>
+<thead>
+<tr>
+<th>
+Sound
+</th>
+<th>
+Play
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
 <audio controls="">
-<source src="reference/figures/readme_4.wav" type="audio/mpeg">
+<source src="reference/figures/1.wav" type="audio/mpeg">
 </audio>
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+<audio controls="">
+<source src="reference/figures/2.wav" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+<audio controls="">
+<source src="reference/figures/3.wav" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+<audio controls="">
+<source src="reference/figures/4.wav" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+<audio controls="">
+<source src="reference/figures/5.wav" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+<audio controls="">
+<source src="reference/figures/6.wav" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+</tbody>
+</table>
 
 If you have a kitty meow that you like and would like to include in the
 package, please either make a PR or e-mail it to me and I will include
