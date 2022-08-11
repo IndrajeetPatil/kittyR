@@ -22,6 +22,7 @@ data cleaning jobs! 😊
 The package is available only on `GitHub`:
 
 ``` r
+# install.packages("remotes")
 remotes::install_github("IndrajeetPatil/kittyR")
 ```
 
@@ -71,7 +72,7 @@ complete, just include this line of code:
 
 ``` r
 # meow meow meow
-# you can choose from a sample of sounds included in the package
+# you can choose from a sample of six meows
 kittyR::meowR(sound = 4)
 ```
 

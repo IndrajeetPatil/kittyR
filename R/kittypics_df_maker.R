@@ -4,7 +4,7 @@
 #' @description
 #'
 #' Mostly useful for internal workings of this package, this function extracts
-#' images at given URL and returns it in a dataframe.
+#' images at given URL and returns it in a data frame.
 #'
 #' @return A tibble containing extracted details from the provided URL.
 #'
@@ -12,6 +12,7 @@
 #'   extracted.
 #' @param ... Currently ignored.
 #'
+#' @import magrittr
 #' @importFrom rvest session html_attr
 #' @importFrom stringr str_split str_detect str_remove_all
 #' @importFrom dplyr filter mutate bind_rows arrange row_number

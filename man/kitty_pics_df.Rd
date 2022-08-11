@@ -17,7 +17,7 @@ A tibble containing extracted details from the provided URL.
 }
 \description{
 Mostly useful for internal workings of this package, this function extracts
-images at given URL and returns it in a dataframe.
+images at given URL and returns it in a data frame.
 }
 \examples{
 set.seed(123)
