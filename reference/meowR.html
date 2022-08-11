@@ -63,10 +63,9 @@ function produced a meow.</p>
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>sound</dt>
-<dd><p>A character string or a number specifying what sound to be
-played by either specifying one of the built in sounds, specifying the path
-to a <code>.wav</code> file or specifying an URL. There are currently 6 meows
-included. The default is <code>3</code>.</p></dd>
+<dd><p>A character string or a number specifying which sound is to be
+played by specifying one of the built-in sounds (stored in <code>.wav</code> files).
+There are currently 6 meows included. The default is third one (<code>3</code>).</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -79,7 +78,6 @@ included. The default is <code>3</code>.</p></dd>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
-<span class="r-in"><span><span class="co"># play Eno's meow</span></span></span>
 <span class="r-in"><span><span class="fu">kittyR</span><span class="fu">::</span><span class="fu">meowR</span><span class="op">(</span>sound <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>beep() could not play the sound due to the following error:</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> Error in play.default(x, rate, ...): no audio drivers are available</span>
