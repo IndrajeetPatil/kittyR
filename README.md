@@ -70,11 +70,14 @@ end of execution of some code to let you know that the execution is
 complete, just include this line of code:
 
 ``` r
-# can't print the sound, so
 # meow meow meow
 # you can choose from a sample of sounds included in the package
 kittyR::meowR(sound = 4)
 ```
+
+<audio controls="">
+<source src="reference/figures/readme_4.wav" type="audio/mpeg">
+</audio>
 
 If you have a kitty meow that you like and would like to include in the
 package, please either make a PR or e-mail it to me and I will include
