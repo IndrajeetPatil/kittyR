@@ -39,7 +39,7 @@ In case you want a picture of a kitty:
 set.seed(20)
 
 # show me the kitty NOW!
-kittyR::kittyR()
+kittyR(meow = FALSE)
 ```
 
 <img src="man/figures/README-kittyR1-1.png" width="100%" />
@@ -53,7 +53,7 @@ argument.
 set.seed(144)
 
 # show me the kitten NOW!
-kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+kittyR(meow = FALSE, only_kitten = TRUE)
 ```
 
 <img src="man/figures/README-kittyR2-1.png" width="100%" />
@@ -73,7 +73,7 @@ complete, just include this line of code:
 ``` r
 # meow meow meow
 # you can choose from a sample of six meows
-kittyR::meowR(sound = 4)
+meowR(sound = 4)
 ```
 
 To help you choose from the existing sounds, here is what all available
@@ -99,7 +99,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/1.wav" type="audio/mpeg">
+<source src="man/figures/1.wav" type="audio/wav">
+<source src="reference/figures/1.wav" type="audio/wav">
 </audio>
 </td>
 </tr>
@@ -109,7 +110,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/2.wav" type="audio/mpeg">
+<source src="man/figures/2.wav" type="audio/wav">
+<source src="reference/figures/2.wav" type="audio/wav">
 </audio>
 </td>
 </tr>
@@ -119,7 +121,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/3.wav" type="audio/mpeg">
+<source src="man/figures/3.wav" type="audio/wav">
+<source src="reference/figures/3.wav" type="audio/wav">
 </audio>
 </td>
 </tr>
@@ -129,7 +132,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/4.wav" type="audio/mpeg">
+<source src="man/figures/4.wav" type="audio/wav">
+<source src="reference/figures/4.wav" type="audio/wav">
 </audio>
 </td>
 </tr>
@@ -139,7 +143,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/5.wav" type="audio/mpeg">
+<source src="man/figures/5.wav" type="audio/wav">
+<source src="reference/figures/5.wav" type="audio/wav">
 </audio>
 </td>
 </tr>
@@ -149,7 +154,8 @@ Meows
 </td>
 <td>
 <audio controls="">
-<source src="reference/figures/6.wav" type="audio/mpeg">
+<source src="man/figures/6.wav" type="audio/wav">
+<source src="reference/figures/6.wav" type="audio/wav">
 </audio>
 </td>
 </tr>

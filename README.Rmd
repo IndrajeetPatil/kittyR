@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+library(kittyR)
 ```
 
 # kittyR: Kitty pictures and meows from R console <img src="man/figures/logo.png" align="right" width="240" />
@@ -51,7 +53,7 @@ In case you want a picture of a kitty:
 set.seed(20)
 
 # show me the kitty NOW!
-kittyR::kittyR()
+kittyR(meow = FALSE)
 ```
 
 By default, the collection will include any kind of cat (big, small, wild,
@@ -62,7 +64,7 @@ etc.). If you want only kittens, you can use an additional argument.
 set.seed(144)
 
 # show me the kitten NOW!
-kittyR::kittyR(meow = FALSE, only_kitten = TRUE)
+kittyR(meow = FALSE, only_kitten = TRUE)
 ```
 
 The collection of cat pictures comes from the following collections of freely
@@ -80,7 +82,7 @@ include this line of code:
 ```{r meowR, eval=FALSE}
 # meow meow meow
 # you can choose from a sample of six meows
-kittyR::meowR(sound = 4)
+meowR(sound = 4)
 ```
 
 To help you choose from the existing sounds, here is what all available meows sound like (if you can't see the play button, you are reading this in `README`; try the [website](https://indrajeetpatil.github.io/kittyR/) instead):
