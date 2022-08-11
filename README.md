@@ -79,14 +79,14 @@ kittyR::meowR(sound = 4)
 To help you choose from the existing sounds, here is what all available
 meows sound like:
 
-<table>
+<table style="text-align: center; vertical-align: middle;">
 <thead>
 <tr>
 <th>
-Sound
+Sound ID
 </th>
 <th>
-Play
+Meows
 </th>
 </tr>
 </thead>
