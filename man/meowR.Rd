@@ -7,10 +7,9 @@
 meowR(sound = 3)
 }
 \arguments{
-\item{sound}{A character string or a number specifying what sound to be
-played by either specifying one of the built in sounds, specifying the path
-to a \code{.wav} file or specifying an URL. There are currently 6 meows
-included. The default is \code{3}.}
+\item{sound}{A character string or a number specifying which sound is to be
+played by specifying one of the built-in sounds (stored in \code{.wav} files).
+There are currently 6 meows included. The default is third one (\code{3}).}
 }
 \value{
 No return value, called for side effect (sound).
@@ -22,7 +21,6 @@ function produced a meow.
 }
 \examples{
 \donttest{
-# play Eno's meow
 kittyR::meowR(sound = 4)
 }
 }
