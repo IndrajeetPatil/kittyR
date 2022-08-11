@@ -77,7 +77,9 @@ kittyR::meowR(sound = 4)
 ```
 
 To help you choose from the existing sounds, here is what all available
-meows sound like:
+meows sound like (if you can’t see the play button, you are reading this
+in `README`; try the [website](https://indrajeetpatil.github.io/kittyR/)
+instead):
 
 <table style="text-align: center; vertical-align: middle;">
 <thead>
