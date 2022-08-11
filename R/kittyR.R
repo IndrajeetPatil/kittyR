@@ -59,7 +59,7 @@ kittyR <- function(url = NULL,
                    sound = 3,
                    only_kitten = FALSE,
                    ...) {
-  # if no url is provided
+  # if no URL is provided
   if (is.null(url)) {
     # if only kitten pics are needed
     if (isTRUE(only_kitten)) {
@@ -76,7 +76,7 @@ kittyR <- function(url = NULL,
     # getting the dataframe with image URLs
     df_combined <- purrr::pmap_dfr(
       .l  = url_list,
-      .f  = kittyR::kitty_pics_df,
+      .f  = kitty_pics_df,
       .id = "source"
     )
   } else {
@@ -88,17 +88,17 @@ kittyR <- function(url = NULL,
 
   # download a random image
   utils::download.file(
-    url      = df_combined$url[sample(x = 1:length(df_combined$url), size = 1)],
+    url      = df_combined$url[sample(seq_along(df_combined$url), size = 1)],
     destfile = temporary_file_location,
     mode     = "wb"
   )
 
   # bring the kitties to R
-  kitty <- imager::load.image(file = temporary_file_location)
+  kitty <- imager::load.image(temporary_file_location)
 
   # display the cat
   graphics::plot(kitty, yaxt = "n", axes = FALSE)
 
   # if needed, play a meow sound
-  if (isTRUE(meow)) kittyR::meowR(sound = sound)
+  if (isTRUE(meow)) meowR(sound = sound)
 }
