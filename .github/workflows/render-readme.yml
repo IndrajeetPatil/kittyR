@@ -27,6 +27,11 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
+      # this is here because of an issue installing the imager package
+      - name: Install XQuartz on macOS
+        if: runner.os == 'macOS'
+        run: brew install xquartz --cask
+
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: |
