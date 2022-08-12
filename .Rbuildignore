@@ -36,3 +36,4 @@ tests\^spelling
 ^\.github/workflows/R\.yaml$
 ^\.github/workflows/pr-commands\.yaml$
 hextools
+^WIP/.
