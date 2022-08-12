@@ -85,11 +85,9 @@ include this line of code:
 meowR(sound = 4)
 ```
 
-There are only six meows available at the moment.
+To help you choose from the existing sounds, here is what all available meows sound like (if you can't see the play button, you are reading this in `README`; try the [website](https://indrajeetpatil.github.io/kittyR/) instead):
 
-```{r, echo=FALSE}
-table_html <- function() {
-  '<table style="text-align: center; vertical-align: middle;">
+<table style="text-align: center; vertical-align: middle;">
    <thead>
       <tr>
          <th>Sound ID</th>
@@ -101,6 +99,7 @@ table_html <- function() {
          <td>1</td>
          <td>
             <audio controls="">
+               <source src="man/figures/1.wav" type="audio/wav">
                <source src="reference/figures/1.wav" type="audio/wav">
             </audio>
          </td>
@@ -109,6 +108,7 @@ table_html <- function() {
          <td>2</td>
          <td>
             <audio controls="">
+               <source src="man/figures/2.wav" type="audio/wav">
                <source src="reference/figures/2.wav" type="audio/wav">
             </audio>
          </td>
@@ -117,6 +117,7 @@ table_html <- function() {
          <td>3</td>
          <td>
             <audio controls="">
+               <source src="man/figures/3.wav" type="audio/wav">
                <source src="reference/figures/3.wav" type="audio/wav">
             </audio>
          </td>
@@ -125,6 +126,7 @@ table_html <- function() {
          <td>4</td>
          <td>
             <audio controls="">
+               <source src="man/figures/4.wav" type="audio/wav">
                <source src="reference/figures/4.wav" type="audio/wav">
             </audio>
          </td>
@@ -133,6 +135,7 @@ table_html <- function() {
          <td>5</td>
          <td>
             <audio controls="">
+               <source src="man/figures/5.wav" type="audio/wav">
                <source src="reference/figures/5.wav" type="audio/wav">
             </audio>
          </td>
@@ -141,18 +144,13 @@ table_html <- function() {
          <td>6</td>
          <td>
             <audio controls="">
+               <source src="man/figures/6.wav" type="audio/wav">
                <source src="reference/figures/6.wav" type="audio/wav">
             </audio>
          </td>
       </tr>
    </tbody>
-</table>'
-}
-```
-
-```{r, results='asis', echo=FALSE, eval=knitr::is_html_output()}
-cat(table_html())
-```
+</table>
 
 If you have a kitty meow that you like and would like to include in the package,
 please either make a PR or e-mail it to me and I will include it.
