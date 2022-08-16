@@ -4,7 +4,7 @@ params:
   include_html_table: false
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- Don't knit this file! Run `readme_renderer.R` instead -->
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
