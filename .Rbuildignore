@@ -28,6 +28,7 @@ publication/*
 ^CRAN-RELEASE$
 tests\^spelling
 ^LICENSE\.md$
+^index\.md$
 ^\.lintr$
 ^\.circleci$
 ^\.github/ISSUE_TEMPLATE$
@@ -37,3 +38,4 @@ tests\^spelling
 ^\.github/workflows/pr-commands\.yaml$
 hextools
 ^WIP/.
+^readme_renderer\.R$

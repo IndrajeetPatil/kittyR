@@ -1,5 +1,7 @@
 ---
 output: github_document
+params:
+  include_html_table: false
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -85,9 +87,11 @@ include this line of code:
 meowR(sound = 4)
 ```
 
-To help you choose from the existing sounds, here is what all available meows sound like (if you can't see the play button, you are reading this in `README`; try the [website](https://indrajeetpatil.github.io/kittyR/) instead):
+There are only six meows available at the moment.
 
-<table style="text-align: center; vertical-align: middle;">
+```{r, echo=FALSE}
+table_html <- function() {
+  '<table style="text-align: center; vertical-align: middle;">
    <thead>
       <tr>
          <th>Sound ID</th>
@@ -150,7 +154,13 @@ To help you choose from the existing sounds, here is what all available meows so
          </td>
       </tr>
    </tbody>
-</table>
+</table>'
+}
+```
+
+```{r, results='asis', echo=FALSE, eval=params$include_html_table}
+cat(table_html())
+```
 
 If you have a kitty meow that you like and would like to include in the package,
 please either make a PR or e-mail it to me and I will include it.
