@@ -50,3 +50,5 @@ revdep/library.noindex
 revdep/data.sqlite
 /doc/
 /Meta/
+index.html
+README.html
